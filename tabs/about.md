@@ -36,9 +36,9 @@ img: ":about.jpg"
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+{%- comment -%} 
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
+This site tracks my progress over time, serves as a reference for completed work and steps taken, and aims to contribute to the tech community by sharing knowledge and helping others. By documenting my journey, I aim to highlight my commitment to personal and professional growth, attention to detail, and my ability to collaborate and share insights with others. 
 
-{{ website_info_text_second }}
+{%- endcomment -%}
+
