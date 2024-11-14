@@ -46,10 +46,13 @@ Starting from level 0, each level introduces new challenges, guiding players on 
 
 ![Wargames:Bandit](:otw_intro.jpg){:data-align="center"}
 
-##### Bandit Level: 0 
+#### Level: 0 
 
-####### Solution: 
+##### Solution: 
 ![Bandit0](:bandit_0.png){:data-align="center"}
+
+
+
 
 
 
