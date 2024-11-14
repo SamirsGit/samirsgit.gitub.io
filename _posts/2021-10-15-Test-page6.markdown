@@ -106,7 +106,7 @@ The password for the next level is stored in the only human-readable file in the
 
 **Commands**:
 - **file** - tells the system to examine the specififed file, in this case all files in this directory * and attempt to classify them by types.
-- * the astericks is a wildcare that matches all files in this directory. By combining this with ./ (current directory) we find all files in the current directory ./*
+- '*' the astericks is a wildcard that matches all files in this directory. By combining this with ./ (current directory) we find all files in the current directory ./*
 - ASCII - in this example, this is the only human readable file in the inhere directory.  
 
 ##### Solution: 
