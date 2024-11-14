@@ -84,7 +84,6 @@ The password for the next level is stored in a file called spaces in this filena
 - The file name contains spaces, you must enclose the file name in either single or double quotes to ensure the command interprets it as a single item rather than seperate arguments.
 - **Tab key** enables auto completion when typing commands, file names, or directory paths. This way you can finish typing quickly & accurately.  
 
-##### Solution: 
 ![Bandit0](:bandit_2.png){:data-align="center"}
 
 Level Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
@@ -96,7 +95,6 @@ The password for the next level is stored in a hidden file in the inhere directo
 - cd (change directory) this command is used to navigate between directories by moving to different locations within the file system.
 - ls -a (list all) - this tells ls to list all files, including hidden files (such as those starting with a dot '.') 
 
-##### Solution: 
 ![Bandit0](:bandit_3.png){:data-align="center"}
  
 Level Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
@@ -109,7 +107,6 @@ The password for the next level is stored in the only human-readable file in the
 - '*' the astericks is a wildcard that matches all files in this directory. By combining this with ./ (current directory) we find all files in the current directory ./*
 - ASCII - in this example, this is the only human readable file in the inhere directory.  
 
-##### Solution: 
 ![Bandit0](:bandit_4.png){:data-align="center"}
  
 Level Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
@@ -122,7 +119,6 @@ human-readable, 1033 bytes in size, not executable
 - **find** used to search for files and directories based on a criteria such as name, type, size, permissions, and more.  syntax: find [path] [criteria] [action]
 - options used: -type f = regular file, -size 1033c which is 1033 bytes, 
 
-##### Solution: 
 ![Bandit0](:bandit_5.png){:data-align="center"}
  
 Level Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
