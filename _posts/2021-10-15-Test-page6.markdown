@@ -86,7 +86,8 @@ Level Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 The password for the next level is stored in a file called spaces in this filename located in the home directory
 
 #### Notes:
-- The file name contains spaces, you must enclose the file name in either single or double quotes to ensure the command interprets it as a single item rather than seperate arguments. 
+- The file name contains spaces, you must enclose the file name in either single or double quotes to ensure the command interprets it as a single item rather than seperate arguments.
+- **Tab key** enables auto completion when typing commands, file names, or directory paths. This way you can finish typing quickly & accurately.  
 
 ##### Solution: 
 ![Bandit0](:bandit_2.png){:data-align="center"}
