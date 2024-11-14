@@ -48,8 +48,9 @@ Starting from level 0, each level introduces new challenges, guiding players on 
 
 ##### Bandit Level: 0 
 
-Solution: 
+####### Solution: 
 ssh bandit0@bandit.labs.overthewire.org -p 2220 
+
 
 
 
