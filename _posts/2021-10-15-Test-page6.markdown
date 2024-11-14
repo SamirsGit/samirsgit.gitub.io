@@ -52,7 +52,7 @@ Starting from level 0, each level introduces new challenges, guiding players on 
 
 SSH Information:  Host = bandit.labs.overthewire.org    Port = 2220 
 
-#### Level: 0 
+### Level: 0 
 
 This level requires the user to connect to a remote server using SSH over port 2220. Given to use, we have the username bandit0 and password bandit0. The command I used to proceed:  ssh bandit0@bandit.labs.overthewire.org -p 2220 
 
@@ -68,10 +68,10 @@ Note: it is best practice to operate as a regular user for tasks like connecting
 
 Level Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
-#### Level: 1
+### Level: 1
 The password for the next level is stored in a file called - located in the home directory
 
-#### Notes:
+##### Notes:
 
 - In future levels, you may encounter files with names starting with a dash. This can cause issues, as commands often interpret the dash as an option (for example, ls -a)
 
@@ -82,10 +82,10 @@ The password for the next level is stored in a file called - located in the home
 
 Level Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
-#### Level: 2
+### Level: 2
 The password for the next level is stored in a file called spaces in this filename located in the home directory
 
-#### Notes:
+##### Notes:
 - The file name contains spaces, you must enclose the file name in either single or double quotes to ensure the command interprets it as a single item rather than seperate arguments.
 - **Tab key** enables auto completion when typing commands, file names, or directory paths. This way you can finish typing quickly & accurately.  
 
