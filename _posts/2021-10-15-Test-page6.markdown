@@ -69,8 +69,7 @@ Note: it is best practice to operate as a regular user for tasks like connecting
 Level Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 #### Level: 1
-
-**Instructions:** The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game. 
+The password for the next level is stored in a file called - located in the home directory
 
 #### Notes:
 
@@ -83,11 +82,16 @@ Level Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 Level Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
+#### Level: 2
+The password for the next level is stored in a file called spaces in this filename located in the home directory
 
+#### Notes:
+- The file name contains spaces, you must enclose the file name in either single or double quotes to ensure the command interprets it as a single item rather than seperate arguments. 
 
+##### Solution: 
+![Bandit0](:bandit_2.png){:data-align="center"}
 
-
-
+Level Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
 
  
