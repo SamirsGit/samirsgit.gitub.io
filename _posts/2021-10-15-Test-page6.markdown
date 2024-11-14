@@ -119,7 +119,8 @@ The password for the next level is stored in a file somewhere under the inhere d
 human-readable, 1033 bytes in size, not executable
 
 **Commands**:
-- **find** used to search for files and directories based on a criteria such as name, type, size, permissions, and more.  find [path] [criteria] [action]
+- **find** used to search for files and directories based on a criteria such as name, type, size, permissions, and more.  syntax: find [path] [criteria] [action]
+- options used: -type f = regular file, -size 1033c which is 1033 bytes, 
 
 ##### Solution: 
 ![Bandit0](:bandit_5.png){:data-align="center"}
