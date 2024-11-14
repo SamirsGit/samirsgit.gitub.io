@@ -40,7 +40,7 @@ date: 2024-10-15 19:20:03 +0900
 ---
 ### OverTheWire: Introduction 
 
-Starting from level 0, each level introduces new challenges, guiding players on how to advance their skillset step by step throughout the game. My tech notes will provide practical solutions, tips, and explanations in order to help others underatand the command line, troubleshoot issues, and improve problem solving skills. Refernecing material while learning is never a bad idea, it will help reinforce and recitate on important fundamentals that will be useful in the future. Navigating computers using the command line is essential in tech fields such as cybersecurity, programming, and system administration. 
+Starting from level 0, each level introduces new challenges, guiding players on how to advance their skillset step by step throughout the game. My tech notes will provide practical solutions, tips, and explanations in order to help others underatand the command line, troubleshoot issues, and improve problem solving skills. Referencing material while learning is never a bad idea, it will help reinforce and recitate on important fundamentals that will be useful in the future. Navigating computers using the command line is essential in tech fields such as cybersecurity, programming, and system administration. 
 
 - Efficiency: faster than using the GUI, scripts can be used to save significant time.
 - Control: greater access and additional ways to manipulate files, system processes, and configurations.
@@ -66,7 +66,9 @@ Note: it is best practice to operate as a regular user for tasks like connecting
 
 Level Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
+#### Level: 1
 
+Instructions:  
 
 
 
