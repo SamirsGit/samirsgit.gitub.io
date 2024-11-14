@@ -39,22 +39,20 @@ date: 2021-10-15 19:20:03 +0900
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+### OverTheWire: Bandit 
 
-{%- include util/auto-content-generator.liquid -%}
-
-<!-- outline-start -->
-
-{{ website_info_text_first }}
-
-<!-- outline-end -->
-
-##### OverTheWire: Bandit 
-
-
+[Starting Page:](https://overthewire.org/wargames/bandit/) 
 
 Starting from level 0, each level introduces new challenges, guiding players on how to advance their skillset step by step throughout the game. My tech notes will provide practical solutions, tips, and explanations in order to help others underatand the command line, troubleshoot issues, and improve problem solving skills. Refernecing material while learning is never a bad idea, it will help reinforce and recitate on important fundamentals that will be useful in the future.
 
+insert image here
+
+
+##### Bandit Level: 0 
+
+[Level 0](https://overthewire.org/wargames/bandit/bandit0.html)
+
+
+
  
 
-{{ website_info_text_second }}
