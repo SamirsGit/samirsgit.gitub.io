@@ -9,7 +9,7 @@ author: "Samir"
 # multiple category is not supported
 category: auto generated
 # multiple tag entries are possible
-tags: [jekyll, sample]
+# tags: [jekyll, sample]
 # thumbnail image for post
 img: ":otw.jpg"
 # disable comments on this page
