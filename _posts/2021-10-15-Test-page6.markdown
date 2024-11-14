@@ -123,8 +123,29 @@ human-readable, 1033 bytes in size, not executable
  
 Level Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
+### Level: 6
+The password for the next level is stored somewhere on the server and has all of the following properties:
+owned by user bandit7, owned by group bandit6, 33 bytes in size
 
+**Commands**
+- / In Linux, when using the slash / key it means to search the entire server. The / is the root directory, similar tot he C: drive on Windows.
+- **>** this is a redirection operator, it will be used to redirect the output of a command to another file or location rather than on the current screen.
+- **0** by placing a zero before the redirection operator, it will target standard input: this is useful when automating since you can feed commands with data from files. 
+- **1** by placing a zero before the redirection operator, it will target standard output: this is regular successful output displayed on the screen.  
+- **2** by placing a zero before the redirection operator, it will target standard errors: this can be used to filter or view error messages seprarately.    
 
+Notice: when we typed in the command: find / -user bandit7 -group bandit6 -size 33c, there will be many error messages saying 'permission denied'.
+![Bandit0](:bandit_6.1.png){:data-align="center"}
+
+Referring to what's mentioned above, we must suppress error messages by redirecting them to a special location for hiding them from the output. 
+
+**Directories**
+- **/dev**  
+- **/null**
+
+![Bandit0](:bandit_6.png){:data-align="center"}
+ 
+Level Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 
 
