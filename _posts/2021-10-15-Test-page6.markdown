@@ -53,7 +53,9 @@ This level requires the user to connect to a remote server using SSH over port 2
 #### Commands Used: 
 ssh (Secure Shell) - Used to securely connect to the Bandit server, usual port is 22. Insecure version is Telnet (23).
 ls (List) - Useed to list files and directories in the current directory. Useful for finding available files & data. 
-cat (Concatenate) - Used to display the contents of a file, in this case revealing the password for the next level.  
+cat (Concatenate) - Used to display the contents of a file, in this case revealing the password for the next level.
+
+Note: it is best practice to operate as a regular user for tasks like connecting to a remote server. Only elevate with sudo when needed for specific administrative tasks.   
 
 ##### Solution: 
 ![Bandit0](:bandit_0.png){:data-align="center"}
