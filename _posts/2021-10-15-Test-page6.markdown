@@ -62,7 +62,6 @@ This level requires the user to connect to a remote server using SSH over port 2
 - **cat** (Concatenate) - Used to display the contents of a file, in this case revealing the password for the next level.
 
 Note: it is best practice to operate as a regular user for tasks like connecting to a remote server. Only elevate with sudo when needed for specific administrative tasks.   
-
 ##### Solution: 
 ![Bandit0](:bandit_0.png){:data-align="center"}
 
@@ -71,7 +70,7 @@ Level Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ### Level: 1
 The password for the next level is stored in a file called - located in the home directory
 
-##### Notes:
+**Notes**:
 
 - In future levels, you may encounter files with names starting with a dash. This can cause issues, as commands often interpret the dash as an option (for example, ls -a)
 
@@ -85,7 +84,7 @@ Level Password: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ### Level: 2
 The password for the next level is stored in a file called spaces in this filename located in the home directory
 
-##### Notes:
+**Notes**:
 - The file name contains spaces, you must enclose the file name in either single or double quotes to ensure the command interprets it as a single item rather than seperate arguments.
 - **Tab key** enables auto completion when typing commands, file names, or directory paths. This way you can finish typing quickly & accurately.  
 
