@@ -113,3 +113,26 @@ The password for the next level is stored in the only human-readable file in the
 ![Bandit0](:bandit_4.png){:data-align="center"}
  
 Level Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+### Level: 5
+The password for the next level is stored in a file somewhere under the inhere directory and has the following properties:
+human-readable, 1033 bytes in size, not executable
+
+**Commands**:
+- **find** used to search for files and directories based on a criteria such as name, type, size, permissions, and more.  find [path] [criteria] [action]
+
+##### Solution: 
+![Bandit0](:bandit_5.png){:data-align="center"}
+ 
+Level Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+
+
+
+
+
+
+
+
+
+
