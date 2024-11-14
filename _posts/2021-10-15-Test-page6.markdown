@@ -92,8 +92,9 @@ Level Password: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ### Level: 3
 The password for the next level is stored in a hidden file in the inhere directory.
 
-**Notes**:
-- 
+**Commands**:
+- cd (change directory) this command is used to navigate between directories by moving to different locations within the file system.
+- ls -a (list all) - this tells ls to list all files, including hidden files (such as those starting with a dot '.') 
 
 ##### Solution: 
 ![Bandit0](:bandit_3.png){:data-align="center"}
