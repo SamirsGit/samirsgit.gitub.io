@@ -74,7 +74,9 @@ Level Password: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 #### Notes:
 
-**cat ./-** - recently, cat was introduced as a command that displays the content of a file, the only one shown here is a dash. We need to indicate that it's a file in the current directory, not an option, which is why we prefix the filename with ./ -- The creator of the game tries to trick us, files that start with a dash can cause problems because they're often interpretted as the beginning of an option, (for example: ls -a). 
+- In future levels, you may encounter files with names starting with a dash. This can cause issues, as commands often interpret the dash as an option (for example, ls -a)
+
+- **Options** - also known as a flag or switch, is a way to modify a command to alter its output. 
 
 ##### Solution: 
 ![Bandit0](:bandit_1.png){:data-align="center"}
