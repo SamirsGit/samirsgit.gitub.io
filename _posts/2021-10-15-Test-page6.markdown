@@ -50,6 +50,11 @@ date: 2021-10-15 19:20:03 +0900
 <!-- outline-end -->
 
 ##### OverTheWire: Bandit 
-Stsrting from level 0, each level introduces new challenges, guiding players on how to advance their skillset step by step throughout the game. My tech notes will provide practical solutions, tips, and explanations in order to help others underatand the command line, troubleshoot issues, and improve problem solving skills. Refernecing material while learning is never a bad idea, it will help reinforce and recitate on important fundamentals that will be useful in the future. 
+
+
+
+Starting from level 0, each level introduces new challenges, guiding players on how to advance their skillset step by step throughout the game. My tech notes will provide practical solutions, tips, and explanations in order to help others underatand the command line, troubleshoot issues, and improve problem solving skills. Refernecing material while learning is never a bad idea, it will help reinforce and recitate on important fundamentals that will be useful in the future.
+
+ 
 
 {{ website_info_text_second }}
