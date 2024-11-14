@@ -46,7 +46,7 @@ Starting from level 0, each level introduces new challenges, guiding players on 
 - Control: greater access and additional ways to manipulate files, system processes, and configurations.
 - Resources: CLI is more lightweight than GUI, uses less sytem resources, and is essential for automation tasks. 
 
-[https://overthewire.org/wargames/bandit/](https://overthewire.org/wargames/bandit/) 
+[https://overthewire.org/wargames/bandit/](https://overthewire.org/wargames/bandit/){:data-align="center"} 
 
 ![Wargames:Bandit](:otw.jpg){:data-align="center"}
 
