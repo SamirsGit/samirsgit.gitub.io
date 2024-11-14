@@ -100,3 +100,16 @@ The password for the next level is stored in a hidden file in the inhere directo
 ![Bandit0](:bandit_3.png){:data-align="center"}
  
 Level Password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+### Level: 4
+The password for the next level is stored in the only human-readable file in the inhere directory. 
+
+**Commands**:
+- **file** - tells the system to examine the specififed file, in this case all files in this directory * and attempt to classify them by types.
+- * the astericks is a wildcare that matches all files in this directory. By combining this with ./ (current directory) we find all files in the current directory ./*
+- ASCII - in this example, this is the only human readable file in the inhere directory.  
+
+##### Solution: 
+![Bandit0](:bandit_4.png){:data-align="center"}
+ 
+Level Password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
