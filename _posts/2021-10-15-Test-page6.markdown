@@ -16,7 +16,7 @@ img: ":otw.jpg"
 #comments_disable: true
 
 # publish date
-date: 2021-10-15 19:20:03 +0900
+date: 2024-10-15 19:20:03 +0900
 
 # seo
 # if not specified, date will be used.
@@ -44,11 +44,13 @@ date: 2021-10-15 19:20:03 +0900
 
 Starting from level 0, each level introduces new challenges, guiding players on how to advance their skillset step by step throughout the game. My tech notes will provide practical solutions, tips, and explanations in order to help others underatand the command line, troubleshoot issues, and improve problem solving skills. Refernecing material while learning is never a bad idea, it will help reinforce and recitate on important fundamentals that will be useful in the future.
 
-[Wargames:Bandit](:otw_intro.jpg){:data-align="center"}
+![Wargames:Bandit](:otw_intro.jpg){:data-align="center"}
 
 ##### Bandit Level: 0 
 
 [Level 0](https://overthewire.org/wargames/bandit/bandit0.html)
+
+
 
 
 
