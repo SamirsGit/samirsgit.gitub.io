@@ -50,6 +50,8 @@ Starting from level 0, each level introduces new challenges, guiding players on 
 
 ![Wargames:Bandit](:otw.jpg){:data-align="center"}
 
+SSH Information:  Host = bandit.labs.overthewire.org    Port = 2220 
+
 #### Level: 0 
 
 This level requires the user to connect to a remote server using SSH over port 2220. Given to use, we have the username bandit0 and password bandit0. The command I used to proceed:  ssh bandit0@bandit.labs.overthewire.org -p 2220 
