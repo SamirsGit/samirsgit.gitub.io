@@ -141,12 +141,23 @@ Referring to what's mentioned above, we must suppress error messages by redirect
 
 **Directories**
 - **/dev** Device Directory: can be seen as a toolbox of special files, representing devices and system interfaces rather than traditional files. The operating system and users can use these files to interact with hardware, virtual devices, and system resources. 
-- **/null** can be seen as a tool within the directory to dispose of data and manage data flow by discarding unwanted output or errors. 
-Combined: they form a special file that acts as a "black hole" for data.
+- **/null** can be seen as a tool within the directory to dispose of data and manage data flow by discarding unwanted output or errors.
+  
+- **/dev/null** combined: they form a special file that acts as a "black hole" for data.
 
 ![Bandit0](:bandit_6.png){:data-align="center"}
  
 Level Password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+### Level: 7
+The password for the next level is stored in the file data.txt next to the word 'millionth'
+
+**Commands**:
+- **grep** Global Regular Expression Print: CLI tool used to search for specific patterns, such as words or phrases, within files. 
+
+![Bandit0](:bandit_7.png){:data-align="center"}
+ 
+Level Password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 
 
