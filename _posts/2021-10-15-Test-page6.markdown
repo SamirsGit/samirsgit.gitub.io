@@ -188,11 +188,24 @@ The password for the next level is stored in the file data.txt, which contains b
 
 **Commands**
 - **base64** this command will convert binary data into an ASCII string (A-Z, a-z, 0-9, +, and .) Base64 encodes every 3 bytes into 4 ASCII characters. 
-- option: -d - decodes Base64 encoded data back to its original format. 
+- option: -d - decodes Base64 encoded data back to its original format.
+- --help , this displays a help message with summary of all options available for any given command (base64 --help) 
 
 ![Bandit0](:bandit_10.png){:data-align="center"}
  
 Level Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+### Level: 11
+The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+**Commands**
+- **tr** - translate: used for translating, deleting, and compressing characters for text manipulation and text processing. 
+- ROT13 - this is a substitution cipher that shifts each letter by 13 places, often used to obscure text.  
+
+![Bandit0](:bandit_11.png){:data-align="center"}
+ 
+Level Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
 
 
 
