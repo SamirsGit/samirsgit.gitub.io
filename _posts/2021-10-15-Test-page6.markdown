@@ -128,7 +128,7 @@ The password for the next level is stored somewhere on the server and has all of
 owned by user bandit7, owned by group bandit6, 33 bytes in size
 
 **Commands**
-- / In Linux, when using the slash / key it means to search the entire server. The / is the root directory, similar tot he C: drive on Windows.
+- **/** In Linux, when using the slash / key it means to search the entire server. The / is the root directory, similar tot he C: drive on Windows.
 - **>** this is a redirection operator, it will be used to redirect the output of a command to another file or location rather than on the current screen.
 - **0** by placing a zero before the redirection operator, it will target standard input: this is useful when automating since you can feed commands with data from files. 
 - **1** by placing a zero before the redirection operator, it will target standard output: this is regular successful output displayed on the screen.  
@@ -140,8 +140,9 @@ Notice: when we typed in the command: find / -user bandit7 -group bandit6 -size 
 Referring to what's mentioned above, we must suppress error messages by redirecting them to a special location for hiding them from the output. 
 
 **Directories**
-- **/dev**  
-- **/null**
+- **/dev** Device Directory: can be seen as a toolbox of special files, representing devices and system interfaces rather than traditional files. The operating system and users can use these files to interact with hardware, virtual devices, and system resources. 
+- **/null** can be seen as a tool within the directory to dispose of data and manage data flow by discarding unwanted output or errors. 
+Combined: they form a special file that acts as a "black hole" for data.
 
 ![Bandit0](:bandit_6.png){:data-align="center"}
  
