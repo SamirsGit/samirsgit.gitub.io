@@ -62,3 +62,5 @@ The password for the next level can be retrieved by submitting the password of t
 ![Bandit0](:bandit_14.png){:data-align="center"}
 
 Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+## Level: 15
