@@ -187,11 +187,12 @@ Level Password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
 
 **Commands**
-
+- **base64** this command will convert binary data into an ASCII string (A-Z, a-z, 0-9, +, and .) Base64 encodes every 3 bytes into 4 ASCII characters. 
+- option: -d - decodes Base64 encoded data back to its original format. 
 
 ![Bandit0](:bandit_10.png){:data-align="center"}
  
-Level Password: 
+Level Password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 
 
 
