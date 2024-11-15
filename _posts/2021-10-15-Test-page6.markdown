@@ -212,19 +212,26 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 **Commands**
 - **mkdir** - (make directory) on this level, we created a new directory named purple inside the /tmp directory 
 - **cp** - (change directory) copies files or directories, 
-- **mv** - (move/rename) moves or renames files or directories, 
+- **mv** - (move/rename) moves or renames files or directories
+- **rm** - (remove) 
+- **gunzip** -
+- **bunzip2** -
+- **tar** -
 
 **Directory**
 - **/tmp** - temporary directory, used for storing filing created by applications, users, or the system temporarily, often will be deleted automatically or upon restart.
   
 ![Bandit0](:bandit_12.png){:data-align="center"}
 
+- First, we created a new directory named purple inside /tmp directory.
+- Then, we cd into the new directory, and copy the data.txt file from the home directory ( ~ ) to the current directory, which brings the file into /tmp/purple.
+- Command: mv renames data.txt to data, we did this to remove the .txt extension from this file which is not a text file. 
+
 ![Bandit0](:bandit_12.1.png){:data-align="center"}
 
+![Bandit0](:bandit_12.2.png){:data-align="center"}
 
-
- 
-Level Password: 
+Level Password: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 
 
