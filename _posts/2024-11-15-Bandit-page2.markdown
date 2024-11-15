@@ -57,10 +57,16 @@ Level Password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 
 **Commands Used:** 
-**nc** (netcat) - 
+**nc** (netcat) - network communication tool that allows users to read and write data across network connections using TCP or UDP.
+- netcat can be used for port scanning, file transferring, network debugging, connecting systems together, and tunneling.
+- netcat can listen for incoming connections, which can receive commmands on a backdoored device.
+- netcat can monitor network traffic, detect anomalous activity, and transfer files to another system.
+
+In this level, we established a connection to a service running on the local machine on port 30000.
 
 ![Bandit0](:bandit_14.png){:data-align="center"}
 
 Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
 ## Level: 15
+
