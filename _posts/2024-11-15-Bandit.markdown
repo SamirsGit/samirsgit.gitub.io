@@ -1,6 +1,6 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_Bandi
+lng_pair: id_Bandit
 title: "OTW Bandit: 0-12"
 
 # post specific
@@ -30,7 +30,7 @@ date: 2024-11-15 19:20:03 +0900
 image_viewer_on: true
 # please use the "image_lazy_loader_on" below to enable image lazy loader for individual pages or posts (_posts/ or [language]/_posts folders).
 # image lazy loader can be enabled or disabled for all posts using the "image_lazy_loader_posts: true" setting in _data/conf/main.yml.
-#image_lazy_loader_on: true
+image_lazy_loader_on: true
 # exclude from on site search
 #on_site_search_exclude: true
 # exclude from search engines
