@@ -69,4 +69,9 @@ In this level, we established a connection to a service running on the local mac
 Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
 ## Level: 15
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+
+**Commands**
+**openssl**
+
 
