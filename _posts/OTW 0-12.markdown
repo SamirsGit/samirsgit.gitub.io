@@ -200,7 +200,7 @@ The password for the next level is stored in the file data.txt, where all lowerc
 
 **Commands**
 - **tr** - translate: used for translating, deleting, and compressing characters for text manipulation and text processing. 
-- ROT13 - this is a substitution cipher that shifts each letter by 13 places, often used to obscure text.  
+- **ROT13** - this is a substitution cipher that shifts each letter by 13 places, often used to obscure text.  
 
 ![Bandit0](:bandit_11.png){:data-align="center"}
  
@@ -210,15 +210,15 @@ Level Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv.
 
 **Commands**
-- **head** - (header)
+- **head** - (header) view the first lines of a file
 - **mkdir** - (make directory) on this level, we created a new directory named purple inside the /tmp directory 
 - **cp** - (change directory) copies files or directories, 
 - **mv** - (move/rename) moves or renames files or directories
-- **rm** - (remove)
-- **xxd** - (
-- **gunzip** -
-- **bunzip2** -
-- **tar** -
+- **rm** - (remove) delete files or directories. 
+- **xxd** - (hexdump converter) convert between binary and hexdump formats.
+- **gunzip** - (gzip decompressor) helps with handling .gz files, decompresses data.gz to data
+- **bunzip2** - (bzip2 decompressor) helps with handling .bz2 files, so if a file is data.bz2 this can bring it to data
+- **tar** - (tape archive) create, extract, or manipulate .tar archives. -x extracts files from an archive, -f specifies the filename of the archive
 
 **Directory**
 - **/tmp** - temporary directory, used for storing filing created by applications, users, or the system temporarily, often will be deleted automatically or upon restart.
