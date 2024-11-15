@@ -27,7 +27,7 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
-      permalink: /posts/:title/
+      permalink: /posts/:title
 
   # for multilingual posts
   - scope:
