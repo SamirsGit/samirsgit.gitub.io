@@ -41,12 +41,14 @@ date: 2024-10-15 18:47:35 +0900
 ### OverTheWire: the next levels will test skills in file manipulation, data extraction, and various encoding schemes.
 
 ### Level: 13 
-
+The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Note: localhost is a hostname that refers to the machine you are working on
 
 **Commands Used:** 
+- **ssh** - (Secure Shell: Default - Port 22) used to securely connect to a remote machine, provides encrypted commmunication between 2 untrusted hosts over an insecure network.   
+- **ssh**
 
+![Bandit0](:bandit_13.png){:data-align="center"}
 
-![Bandit0](:bandit_0.png){:data-align="center"}
-
+![Bandit0](:bandit_13.1.png){:data-align="center"}
 
 Level Password: 
