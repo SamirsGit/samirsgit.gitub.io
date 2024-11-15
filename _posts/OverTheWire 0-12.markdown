@@ -16,7 +16,7 @@ img: ":otw_intro.jpg"
 #comments_disable: true
 
 # publish date
-date: 2024-10-15 19:20:03 +0900
+date: 2024-11-15 19:20:03 +0900
 
 # seo
 # if not specified, date will be used.
