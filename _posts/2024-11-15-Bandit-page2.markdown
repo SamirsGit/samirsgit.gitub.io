@@ -49,4 +49,16 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 
 ![Bandit0](:bandit_13.3.png){:data-align="center"}
 
+Once you obtain access, you will be able to find the password in the stored location:  cat /etc/bandit_pass/bandit14 
+
 Level Password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+### Level: 14 
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+
+**Commands Used:** 
+**nc** (netcat) - 
+
+![Bandit0](:bandit_14.png){:data-align="center"}
+
+Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
