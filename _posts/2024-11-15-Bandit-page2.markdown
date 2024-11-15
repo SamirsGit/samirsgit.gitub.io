@@ -45,10 +45,8 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 
 **Commands Used:** 
 - **ssh** - (Secure Shell: Default - Port 22) used to securely connect to a remote machine, provides encrypted commmunication between 2 untrusted hosts over an insecure network.   
-- **ssh**
+- **sshkey.private** (Private SSH key) this is used for authenticating your identity when connecting to a remote server using SSH.
 
 ![Bandit0](:bandit_13.png){:data-align="center"}
 
-![Bandit0](:bandit_13.1.png){:data-align="center"}
-
-Level Password: 
+Level Password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
