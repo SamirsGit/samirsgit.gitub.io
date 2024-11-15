@@ -210,10 +210,12 @@ Level Password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work. Use mkdir with a hard to guess directory name. Or better, use the command “mktemp -d”. Then copy the datafile using cp, and rename it using mv.
 
 **Commands**
+- **head** - (header)
 - **mkdir** - (make directory) on this level, we created a new directory named purple inside the /tmp directory 
 - **cp** - (change directory) copies files or directories, 
 - **mv** - (move/rename) moves or renames files or directories
-- **rm** - (remove) 
+- **rm** - (remove)
+- **xxd** - (
 - **gunzip** -
 - **bunzip2** -
 - **tar** -
@@ -228,6 +230,8 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 - Command: mv renames data.txt to data, we did this to remove the .txt extension from this file which is not a text file. 
 
 ![Bandit0](:bandit_12.1.png){:data-align="center"}
+
+
 
 ![Bandit0](:bandit_12.2.png){:data-align="center"}
 
