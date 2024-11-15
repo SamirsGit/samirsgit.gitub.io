@@ -1,6 +1,6 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_Bandit
+lng_pair: id_What_is_this
 title: "OTW Bandit: 0-12"
 
 # post specific
