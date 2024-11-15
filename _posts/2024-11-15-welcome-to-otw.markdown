@@ -7,7 +7,7 @@ title: "OTW Bandit: 0-12"
 # if not specified, .name will be used from _data/owner/[language].yml
 author: "Samir A."
 # multiple category is not supported
-category: auto generated
+category: jekyll
 # multiple tag entries are possible
 # tags: [jekyll, sample]
 # thumbnail image for post
