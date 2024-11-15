@@ -34,7 +34,7 @@ defaults:
       # to separate language posts folders
       path: "*/_posts"
     values:
-      hidden: true
+      #hidden: true
       layout: "post"
       permalink: /:path
 
