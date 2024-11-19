@@ -229,7 +229,7 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 - Then, we cd into the new directory, and copy the data.txt file from the home directory ( ~ ) to the current directory, which brings the file into /tmp/purple.
 - Command: mv renames data.txt to data, we did this to remove the .txt extension from this file which is not a text file. 
 
-  * Hex Dumps - each byte reprresents an 8-bit value from the original binary data, displayed in hexadecimal notation, it represents compressed data. For example, 1F8B indicates a Gzip compressed file. 425A and BZH signifies a Bzip2 compressed file. This would be helpful to know when utilizing a script that can automatically perform the decompression steps, many of the following commands are tied together in bash scripts to repeat future inputs. 
+  * **Hex Dumps** - each byte reprresents an 8-bit value from the original binary data, displayed in hexadecimal notation, it represents compressed data. For example, 1F8B indicates a Gzip compressed file. 425A and BZH signifies a Bzip2 compressed file. This would be helpful to know when utilizing a script that can automatically perform the decompression steps, many of the following commands are tied together in bash scripts to repeat future inputs. 
 
 ![Bandit0](:bandit_12.1.png){:data-align="center"}
 
