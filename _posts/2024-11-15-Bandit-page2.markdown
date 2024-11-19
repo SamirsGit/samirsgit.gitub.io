@@ -74,7 +74,8 @@ Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ## Level: 15
 The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
 
-**Commands**
-**openssl**
+![Bandit0](:bandit_15.png){:data-align="center"}
+
+Level Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 
 
