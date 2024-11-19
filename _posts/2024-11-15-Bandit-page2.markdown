@@ -48,6 +48,8 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 - **ssh** - (Secure Shell: Default - Port 22) used to securely connect to a remote machine, provides encrypted commmunication between 2 untrusted hosts over an insecure network.   
 - **sshkey.private** (Private SSH key) this is used for authenticating your identity when connecting to a remote server using SSH.
 
+Exposing private keys in public repositories or shared systems is a security issue, keep private keys secure. 
+
 ![Bandit0](:bandit_13.3.png){:data-align="center"}
 
 Once you obtain access, you will be able to find the password in the stored location:  cat /etc/bandit_pass/bandit14 
