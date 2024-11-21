@@ -74,8 +74,25 @@ Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ## Level: 15
 The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
 
+**Note:** ncat, along with most other commands, intrpret its arguments in a specific way and require correct syntax. For example, we need to utilize port 30001 on localhost, which ncat can be useful for. However, the correct syntax requires the port directly after the hostname is specified without the -p flag. 
+
+We can utilize **openssl** alternatively, however, I will continue expanding on netcat. 
+
 ![Bandit0](:bandit_15.png){:data-align="center"}
 
 Level Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+The command is telling netcat to connect to localhost on port 30001 using ssl. If you add the -p argument, this would bind the local port 30001 for the outgoing connection, which is not what is required in this context. **Binding** involves associating a socket with a specific port number on the local machine, which allows the socket to listen for incoming connections or send data from that port. Severs listen for incoming connections. Ports must be reserved for the application, so others do not utilize. Listeners are effective for data exchange, command execution, file transfer, service provision, and session management. 
+
+- Create Socket > Bind Socket > Listen
+
+## Level: 16 
+The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL/TLS and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
+
+- **nmap** (Network Mapper) - this is an open source tool often used for network and security auditing. This tool will help network administrators reveal hosts and services on various systems. The tool can be used both locally and remotely.
+
+![Bandit0](:bandit_16.png){:data-align="center"}
+
+
 
 
