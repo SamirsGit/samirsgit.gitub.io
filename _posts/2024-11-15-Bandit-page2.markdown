@@ -71,7 +71,7 @@ In this level, we established a connection to a service running on the local mac
 
 Level Password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 
-## Level: 15
+### Level: 15
 The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
 
 **Note:** ncat, along with most other commands, intrpret its arguments in a specific way and require correct syntax. For example, we need to utilize port 30001 on localhost, which ncat can be useful for. However, the correct syntax requires the port directly after the hostname is specified without the -p flag. 
@@ -86,7 +86,7 @@ The command is telling netcat to connect to localhost on port 30001 using ssl. I
 
 - Create Socket > Bind Socket > Listen
 
-## Level: 16 
+### Level: 16 
 The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL/TLS and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
 
 - **nmap** (Network Mapper) - this is an open source tool often used for network and security auditing. This tool will help network administrators reveal hosts and services on various systems. The tool can be used both locally and remotely.
@@ -102,6 +102,6 @@ RSA private keys are an important part of assymetric cryptography, it can be use
 
 Level Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 
-##Level 17:
+### Level 17:
 There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
 
