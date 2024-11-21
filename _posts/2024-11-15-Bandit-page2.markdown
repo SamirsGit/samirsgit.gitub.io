@@ -100,5 +100,3 @@ Looking closely at the highlighted text you will notice the wording: 'please ent
 
 RSA private keys are an important part of assymetric cryptography, it can be used for decrypting data, digital signatures, authentication, secure key exchange, and code signing. This RSA key may be useful in the future, we should save the file in the /tmp directory. 
 
-Level Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
-
