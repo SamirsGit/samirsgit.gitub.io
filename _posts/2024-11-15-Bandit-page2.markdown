@@ -90,9 +90,18 @@ The command is telling netcat to connect to localhost on port 30001 using ssl. I
 The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL/TLS and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
 
 - **nmap** (Network Mapper) - this is an open source tool often used for network and security auditing. This tool will help network administrators reveal hosts and services on various systems. The tool can be used both locally and remotely.
+- arguments: -sV: vulnerability scan, -T4: viscosity of the scan, 127.0.0.1: localhost, -p port specification. 
 
 ![Bandit0](:bandit_16.png){:data-align="center"}
 
+Looking closely at the highlighted text you will notice the wording: 'please enter the correct password' associated with Port 31790. This indicator suggests this is the correct port.
 
+![Bandit0](:bandit_16.1.png){:data-align="center"}
 
+RSA private keys are an important part of assymetric cryptography, it can be used for decrypting data, digital signatures, authentication, secure key exchange, and code signing. 
+
+Level Password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+##Level 17:
+There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
 
