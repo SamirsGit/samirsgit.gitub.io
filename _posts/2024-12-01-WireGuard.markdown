@@ -68,7 +68,7 @@ $ netcat -v -z -u  <public IP address> 33333
 - translated: check connectivity to a port on a remote server'
 **note** if you have a firewall enabled, ensure it allows 33333 through from the router. 
 
-##### Setup WG VPN Server - install programs, create configuration file
+### Setup WG VPN Server - install programs, create configuration file
 $ sudo apt install wireguard wireguard-tools iptables 
 - **sudo** superuser do - allows user to execute a command as an elevated user 
 - **apt** managing software and handling packages on the system efficiently. 
@@ -82,12 +82,32 @@ $ cat /proc/sys/net/ipv4/ip_forward
 
 ![Wireguard](:wg_2.png){:data-align="center"} 
 
+##### Create public and private keys for VPN server
+$ wg genkey | tee server-privatekey | wg pubkey > server-publickey 
+- generates new private key, **tee** reads and writes from standard input to standard output and files, generates private ket to a file name server-privatekey
+- wg reads the private keys and generates corresponding public, server redirects the output to a file named server-publickey
+- **suggestion** $ chmod 600 server-privatekey
+- this command will provide additional security to the private key ensuring its permissions are set accordingly
 
+##### Create configuration file 
+$ sudo nano /etc/wireguard/wg0.conf 
+$ chmod 600 wg0.conf 
 
+![Wireguard](:wg_3.png){:data-align="center"}
 
+- Address - this is the private IP address for the wg0 interface, which is a tunnel at one end is a server the end is a client peer. Cannot be within your LAN IP network. 
+- Listen Port - you can choose another, this ones easily remembered and unlikely to clash with other VPNs or network services.
+- PrivateKey - keep it private, should never be shared with peers/clients.
+- PostUp PostDown - remember to change the interface from eth0 to the name you find on your server.
 
+##### Start Server & confirm connection 
+$ systemctl start wg-quick@wg0 
+$ systemctl enable wg-quick@wg0 
+- first, start the wg0 interface, then enable WG service automatically at boot
+- **systemctl** used to manage system and service configurations by managing the OS and status of services.
 
-
+![Wireguard](:wg_4.png){:data-align="center"}
+![Wireguard](:wg_5.png){:data-align="center"}
 
 
  
