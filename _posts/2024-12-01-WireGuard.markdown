@@ -38,7 +38,7 @@ date: 2024-10-15 18:47:35 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-### WireGuard - VPN Server & Client configuration 
+### VPN Server & Client configuration 
 
 Online privacy and security offers many benefits, VPNs (Virtual Private Networks) have become essential tools for protecting personal data and ensuring secure internet connections. Although, each has its own strengths and weaknesses, WireGuard gained acceptance by many security and IT professionals. Wireguard benefits by its simplicty, being only 4,000 lines of C, which means fewer bugs and security vulnerabilities, reduced CPU usage and faster connection times. Wireguard (WG) which is 256-bit encryption uses ChaCha20 cipher with Poly1305 message authentication code, which is particuarly effective at protecting against MiTM. Wireguard has been designed with security in mind. 
 
@@ -49,7 +49,7 @@ Also, its worthwhile to note that the traffic will have the same public IP addre
 ![Wireguard](:wg_7.png){:data-align="center"}
 
 **Limiting Factors:** 
-CPU usage, memory, network bandwidth (hardware) 
+CPU utilization, Memory, Network Bandwidth
 
 Step 1: Expose the WG server to the internet - this ensures your external IP can be referenced from the wider internet, most people have a static IP from their ISP. 
 **Port Forwarding** - enables external devices to access services on a private network. When data reaches your router, the router needs to know which device on the LAN. Port forwarding sets up rules to direct this traffic. Each rule has a port number identified and the local IP address of the device that should receive this traffic. 
@@ -60,14 +60,16 @@ In order to determine the correct IP address, you may type ipconfig or ifconfig,
 
 ##### Purpose: analyzing network traffic to determine if port forwarding is working properly. 
 $ sudo apt install netcat -y        [-y at the end means yes] 
+
 $ ifconfig -a 
-     eth0   inet 192.168.0.88      netmask 255.255.255.0    
+- eth0   inet 192.168.0.88      netmask 255.255.255.0 
+
 $ tcpdump -i eth0 "udp port 33333" 
-      'translated: listen on interface eth0 for UDP packets on port 33333'
+- translated: listen on interface eth0 for UDP packets on port 33333'
 
 ##### Scan for listening daemons to determine whether a connection attempt will successful. 
 $ netcat -v -z -u  <public IP address> 33333 
-- translated: check connectivity to a port on a remote server'
+- check connectivity to a port on a remote server'
 **note** if you have a firewall enabled, ensure it allows 33333 through from the router. 
 
 ### Setup WG VPN Server - install programs, create configuration file
