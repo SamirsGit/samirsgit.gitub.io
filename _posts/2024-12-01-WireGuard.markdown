@@ -46,6 +46,8 @@ Wireguard can run inside the Linux kernel, a part of the OS that does the low le
 
 Also, its worthwhile to note that the traffic will have the same public IP address of where your server resides. So of it is running at home, with the VPN service running it will have the same home IP address even if you were to connect at a distant LAN. WG continues to be the most secure free and open source VPN protocol. 
 
+![Wireguard](:wg_7.png){:data-align="center"}
+
 **Limiting Factors:** 
 CPU usage, memory, network bandwidth (hardware) 
 
@@ -139,8 +141,6 @@ $ systemctl reload wg-quick@wg0
 - **Secure Remote Access** securely access your network from anywhere, ensuring data remains protected
 - **Internet Privacy** encryption helps protect your online privacy by preventing eavesdropping
 - **Faster VPN connections** lightweight & efficient VPN service, results in better speeds and lower latency  
-
-
 
 
 
