@@ -100,13 +100,14 @@ $ chmod 600 wg0.conf
 
 ![Wireguard](:wg_3.png){:data-align="center"}
 
-- Address - this is the private IP address for the wg0 interface, which is a tunnel at one end is a server the end is a client peer. Cannot be within your LAN IP network. 
-- Listen Port - you can choose another, this ones easily remembered and unlikely to clash with other VPNs or network services.
-- PrivateKey - keep it private, should never be shared with peers/clients.
-- PostUp/PostDown - remember to change the interface from eth0 to the name you find on your server.
+- **Address** - this is the private IP address for the wg0 interface, which is a tunnel at one end is a server the end is a client peer. Cannot be within your LAN IP network. 
+- **Listen Port** - you can choose another, this ones easily remembered and unlikely to clash with other VPNs or network services.
+- **PrivateKey** - keep it private, should never be shared with peers/clients.
+- **PostUp/PostDown** - remember to change the interface from eth0 to the name you find on your server.
 
 ##### Start Server, in this configuration at startup 
 $ systemctl start wg-quick@wg0 
+
 $ systemctl enable wg-quick@wg0 
 - first, start the wg0 interface, then enable WG service automatically at boot
 
@@ -136,7 +137,8 @@ $ sudo nano /etc/wireguard/wg0.conf
 - AllowedIPs =  10.0.0.2/32 (notice /32, specific address permitted to transmit/receive traffic)
 
 ##### Reload the configuration file, activate the client tunnel. 
-**note** I suggest configuring this with a different DNS server than 8.8.8.8 or 8.8.4.4. 
+**note** I suggest configuring this with a different DNS server than 8.8.8.8 or 8.8.4.4.
+
 $ systemctl reload wg-quick@wg0
 
 **Outcomes:**
@@ -152,7 +154,8 @@ $ qrencode -t ansiutf8 -r "wg0.conf"
 ##### Test Connection 
 $ tcpdump -i wg0 
 ![Wireguard](:wg_8.png){:data-align="center"}
-- You should see a lot of traffic going over the connection, if nothing then there's no connection established.   
+- You should see a lot of traffic going over the connection, if nothing then there's no connection established.
+    
 $ wg show
 
 
