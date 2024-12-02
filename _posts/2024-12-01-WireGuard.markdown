@@ -65,12 +65,12 @@ $ ifconfig -a
 - eth0   inet 192.168.0.88      netmask 255.255.255.0 
 
 $ tcpdump -i eth0 "udp port 33333" 
-- translated: listen on interface eth0 for UDP packets on port 33333'
+- translated: listen on interface eth0 for UDP packets on port 33333
 
 ##### Scan for listening daemons to determine whether a connection attempt will successful. 
 $ netcat -v -z -u  <public IP address> 33333 
-- check connectivity to a port on a remote server'
-**note** if you have a firewall enabled, ensure it allows 33333 through from the router. 
+- check connectivity to a port on a remote server
+- **note** if you have a firewall enabled, ensure it allows 33333 through from the router 
 
 ### Setup WG VPN Server - install programs, create configuration file
 $ sudo apt install wireguard wireguard-tools iptables 
@@ -79,10 +79,10 @@ $ sudo apt install wireguard wireguard-tools iptables
 - **iptables** this is used to manage NAT (network address translation) and packet forwarding in the kernel.
 
 $ sudo nano /etc/sysctl.conf 
-- direction: uncommment by removing # next to **net.ipv4.ip_forward=1**, to enable packet forwarding for IPv4'
+- direction: enable packet forwarding by removing # next to: **net.ipv4.ip_forward=1**
 
 $ cat /proc/sys/net/ipv4/ip_forward
-- output must be 1', use this to check if recent edit saved successfully.
+- output must be 1 use this to check if recent edit has saved successfully
 
 ![Wireguard](:wg_2.png){:data-align="center"} 
 
@@ -93,9 +93,9 @@ $ wg genkey | tee server-privatekey | wg pubkey > server-publickey
 - **suggestion** $ chmod 600 server-privatekey
 - this command will provide additional security to the private key ensuring its permissions are set accordingly
 
-
 ##### Create configuration file 
 $ sudo nano /etc/wireguard/wg0.conf 
+
 $ chmod 600 wg0.conf 
 
 ![Wireguard](:wg_3.png){:data-align="center"}
