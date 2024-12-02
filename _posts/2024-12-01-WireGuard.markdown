@@ -76,8 +76,11 @@ $ sudo apt install wireguard wireguard-tools iptables
 
 $ sudo nano /etc/sysctl.conf 
 - direction: uncommment by removing # next to **net.ipv4.ip_forward=1**, to enable packet forwarding for IPv4'
+
 $ cat /proc/sys/net/ipv4/ip_forward
-- output must be 1' 
+- output must be 1', use this to check if recent edit saved successfully.
+
+![Wireguard](:wg_2.png){:data-align="center"} 
 
 
 
