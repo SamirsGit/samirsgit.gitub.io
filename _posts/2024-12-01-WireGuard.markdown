@@ -80,11 +80,7 @@ CPU usage, memory, network bandwidth (hardware)
 Step 1: Expose the WG server to the internet - this ensures your external IP can be referenced from the wider internet, most people have a static IP from their ISP. 
 **Port Forwarding** - enables external devices to access services on a private network. When data reaches your router, the router needs to know which device on the LAN. Port forwarding sets up rules to direct this traffic. Each rule has a port number identified and the local IP address of the device that should receive this traffic. 
 
-Sign into your router interface, find **port forwarding settings** - 
-Application name: Custom 
-WAN / LAN Port: 33333 
-Internal Client: eth0 private IP address (suggest making this static)  
-Protcol: UDP 
+![Wireguard](:wg_1.png){:data-align="center"} 
 
 
 
