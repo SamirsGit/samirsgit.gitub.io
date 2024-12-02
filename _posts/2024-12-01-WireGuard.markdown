@@ -120,21 +120,17 @@ $ systemctl status wg-quick@wg0
 Download the Windows Wireguard application. Add an empty tunnel. Take note of the Public Key, it will need to be placed onto the WG VPN server as a peer. 
 
 - Utilize this configuration file: worked successfully on Android & Windows OS
-[Interface]
-PrivateKey = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDEFG=
-ListenPort = 33333
-Address = 10.0.0.2/24 
-DNS = <IP_of_your_dns>, 8.8.8.8 for google                
-
-[Peer]
-PublicKey = HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHIJKLMNOP=
-AllowedIPs = 0.0.0.0/0 
-Endpoint = <static_public_ip_address>:33333
-PersistentKeepalive = 35
-
 ![Wireguard](:wg_6.png){:data-align="center"}
 
+##### Update the server configuration file  
+$ sudo nano /etc/wireguard/wg0.conf 
+**format**
+- [Peer]
+- PublicKey = <public_ip_of_client>
+- AllowedIPs =  10.0.0.2/32
 
+##### Reload the configuration file, activate the client tunnel. I suggest configuring this with a different DNS server than 8.8.8.8 or 8.8.4.4 
+$ systemctl reload wg-quick@wg0
 
 
 
