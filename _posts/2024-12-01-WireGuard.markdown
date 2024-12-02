@@ -98,16 +98,23 @@ $ chmod 600 wg0.conf
 - Address - this is the private IP address for the wg0 interface, which is a tunnel at one end is a server the end is a client peer. Cannot be within your LAN IP network. 
 - Listen Port - you can choose another, this ones easily remembered and unlikely to clash with other VPNs or network services.
 - PrivateKey - keep it private, should never be shared with peers/clients.
-- PostUp PostDown - remember to change the interface from eth0 to the name you find on your server.
+- PostUp/PostDown - remember to change the interface from eth0 to the name you find on your server.
 
-##### Start Server & confirm connection 
+##### Start Server, in this configuration at startup 
 $ systemctl start wg-quick@wg0 
 $ systemctl enable wg-quick@wg0 
 - first, start the wg0 interface, then enable WG service automatically at boot
-- **systemctl** used to manage system and service configurations by managing the OS and status of services.
 
+##### Confirm status of interface & determien if connection is achievable 
+$ netstat -n -r
+- display IP routing. 
 ![Wireguard](:wg_4.png){:data-align="center"}
+- **note** destination network, such as 0.0.0.0 represents the default route, which searches for a gateway, in this case 192.168.0.1. Subnet masks indicate the number of devices 
+that can fit within a network segement /24 (255.255.255.0 is 254 devices, 1 network address 1 broadcast). 
+
+$ systemctl enable wg-quick@wg0 
 ![Wireguard](:wg_5.png){:data-align="center"}
+- **note** 
 
 
  
