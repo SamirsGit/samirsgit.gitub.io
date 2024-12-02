@@ -40,5 +40,60 @@ date: 2024-10-15 18:47:35 +0900
 ---
 ### WireGuard - VPN Server & Client configuration 
 
-### Project 1 - planning on using this in combination with other services such as OpenVPN next for TCP. 
+Online privacy and security offers many benefits, VPNs (Virtual Private Networks) have become essential tools for protecting personal data and ensuring secure internet connections. Although, each has its own strengths and weaknesses, WireGuard gained acceptance by many security and IT professionals. Wireguard benefits by its simplicty, being only 4,000 lines of code, which means fewer bugs and security vulnerabilities, reduced CPU usage and faster connection times. Wireguard (WG) which is 256-bit encryption uses ChaCha20 cipher with Poly1305 message authentication code, which is particuarly effective at protecting against MiTM. Wireguard has been designed with security in mind. 
+
+Wireguard can run inside the Linux kernel, a part of the OS that does the low level processing, which is what is going to be demonstrated in this documentation. Wrieguard does not have a way of allocating dynamic IP addresses. This means your VPN IP address can be the same everytime you connect, which can lead to being tracked online. This and WG doesnt delete your IP when you disconnect, it remains in memory for another period of time. WG uses the same keys by default, if someone obtained the keys from the server they can decrypt traffic. WG doesnt do anything to obfuscate traffic, so it can be vulnerable to Deep Packet Inspection (DPI), so someone can figure you're using a VPN and even what type. WG is also UDP only, there are ways to enable TCP but we will address this in another post by utilizing 2 VPN tunnels for our traffic. 
+
+Also, its worthwhile to note that the traffic will have the same public IP address of where your server resides. So of it is running at home, with the VPN service running it will have the same home IP address even if you were to connect at a distant LAN. WG continues to be the most secure free and open source VPN protocol. 
+
+Note to self: update this toplogy and insert an image. 
++------------------------+
+|     Raspberry Pi       |
+|  (WireGuard Server)    |
++-----------+------------+
+            |
+            | Local Network (LAN)
+            |
++-----------+------------+
+|     Router/Switch      |
++-----------+------------+
+            |
+            |      Internet
+         ~~~~~~~~ (Cloud) ~~~~~~~~
+            |
+            |
+    +-------+-------+
+    |               |
++---+---+       +---+---+
+|       |       |       |
+|Laptop |       |Android|
+|       |       |Device |
++-------+       +-------+
+
+Components of configuration: 
+Wireguard VPN server running on Raspberry Pi (Pi4 Model B: worked in this example)
+Wireguard VPN clients include Lenovo Laptop, Android Phone
+
+Limiting factors: 
+CPU usage, memory, network bandwidth (hardware) 
+
+Step 1: Expose the WG server to the internet - this ensures your external IP can be referenced from the wider internet, most people have a static IP from their ISP. 
+**Port Forwarding** - enables external devices to access services on a private network. When data reaches your router, the router needs to know which device on the LAN. Port forwarding sets up rules to direct this traffic. Each rule has a port number identified and the local IP address of the device that should receive this traffic. 
+
+Sign into your router interface, find **port forwarding settings** - 
+Application name: Custom 
+WAN / LAN Port: 33333 
+Internal Client: eth0 private IP address (suggest making this static)  
+Protcol: UDP 
+
+
+
+
+
+
+
+
+
+
+
  
