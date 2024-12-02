@@ -144,6 +144,7 @@ $ systemctl reload wg-quick@wg0
 
 ##### Generate QR Codes 
 $ apt install qrencode
+
 $ qrencode -t ansiutf8 -r "wg0.conf"
 
 ##### Test Connection 
