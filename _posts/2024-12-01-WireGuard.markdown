@@ -128,7 +128,7 @@ Download the Windows Wireguard application. Add an empty tunnel. Take note of th
 $ sudo nano /etc/wireguard/wg0.conf 
 
 [Peer]
-- PublicKey = <public_ip_of_client>
+- PublicKey = key_from_client_device (under interface)
 - AllowedIPs =  10.0.0.2/32
 
 ##### Reload the configuration file, activate the client tunnel. 
