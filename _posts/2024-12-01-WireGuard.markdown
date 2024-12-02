@@ -112,9 +112,35 @@ $ netstat -n -r
 - **note** destination network, such as 0.0.0.0 represents the default route, which searches for a gateway, in this case 192.168.0.1. Subnet masks indicate the number of devices 
 that can fit within a network segement /24 (255.255.255.0 is 254 devices, 1 network address 1 broadcast). 
 
-$ systemctl enable wg-quick@wg0 
+$ systemctl status wg-quick@wg0 
 ![Wireguard](:wg_5.png){:data-align="center"}
-- **note** 
+- **note** look for indicators that tell you whether the service is active or inactive. Ensure the service unit file is loaded correctly. Review log entries from the service.
+
+### Setup Client connections: supported operating systems include Linux, Windows, MacOS, Android, iOS, and Raspberry Pi. 
+Download the Windows Wireguard application. Add an empty tunnel. Take note of the Public Key, it will need to be placed onto the WG VPN server as a peer. 
+
+- Utilize this configuration file: worked successfully on Android & Windows OS
+[Interface]
+PrivateKey = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCDEFG=
+ListenPort = 33333
+Address = 10.0.0.2/24 
+DNS = <IP_of_your_dns>, 8.8.8.8 for google                
+
+[Peer]
+PublicKey = HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHIJKLMNOP=
+AllowedIPs = 0.0.0.0/0 
+Endpoint = <static_public_ip_address>:33333
+PersistentKeepalive = 35
+
+![Wireguard](:wg_6.png){:data-align="center"}
 
 
- 
+
+
+
+
+
+
+
+
+
