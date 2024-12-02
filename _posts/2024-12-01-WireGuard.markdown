@@ -131,7 +131,7 @@ $ sudo nano /etc/wireguard/wg0.conf
 
 [Peer]
 - PublicKey = key_from_client_device (under interface)
-- AllowedIPs =  10.0.0.2/32
+- AllowedIPs =  10.0.0.2/32 (notice /32, specific address permitted to transmit/receive traffic)
 
 ##### Reload the configuration file, activate the client tunnel. 
 **note** I suggest configuring this with a different DNS server than 8.8.8.8 or 8.8.4.4, on the Rasperry Pi it hosts Pi-hole DNS server very well. 
