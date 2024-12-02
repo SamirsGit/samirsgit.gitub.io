@@ -142,6 +142,13 @@ $ systemctl reload wg-quick@wg0
 - **Internet Privacy** encryption helps protect your online privacy by preventing eavesdropping
 - **Faster VPN connections** lightweight & efficient VPN service, results in better speeds and lower latency  
 
+##### Generate QR Codes 
+$ apt install qrencode
+$ qrencode -t ansiutf8 -r "wg0.conf"
+
+##### Test Connection 
+$ tcpdump -i wg0 
+![Wireguard](:wg_8.png){:data-align="center"}
 
 
 
