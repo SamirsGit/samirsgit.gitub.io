@@ -46,34 +46,6 @@ Wireguard can run inside the Linux kernel, a part of the OS that does the low le
 
 Also, its worthwhile to note that the traffic will have the same public IP address of where your server resides. So of it is running at home, with the VPN service running it will have the same home IP address even if you were to connect at a distant LAN. WG continues to be the most secure free and open source VPN protocol. 
 
-Note to self: update this toplogy and insert an image. 
-+------------------------+
-|     Raspberry Pi       |
-|  (WireGuard Server)    |
-+-----------+------------+
-            |
-            | Local Network (LAN)
-            |
-+-----------+------------+
-|     Router/Switch      |
-+-----------+------------+
-            |
-            |      Internet
-         ~~~~~~~~ (Cloud) ~~~~~~~~
-            |
-            |
-    +-------+-------+
-    |               |
-+---+---+       +---+---+
-|       |       |       |
-|Laptop |       |Android|
-|       |       |Device |
-+-------+       +-------+
-
-Components of configuration: 
-Wireguard VPN server running on Raspberry Pi (Pi4 Model B: worked in this example)
-Wireguard VPN clients include Lenovo Laptop, Android Phone
-
 Limiting factors: 
 CPU usage, memory, network bandwidth (hardware) 
 
@@ -82,7 +54,31 @@ Step 1: Expose the WG server to the internet - this ensures your external IP can
 
 ![Wireguard](:wg_1.png){:data-align="center"} 
 
+In order to determine the correct IP address, you may type ipconfig || ifconfig, depending on which OS, and look for the private IP address in the eth0 interface. That's what you're going to want to use for port forwarding on your router. 
 
+##### Purpose: analyzing network traffic to determine if port forwarding is working properly. 
+$ sudo apt install netcat -y        [-y at the end means yes] 
+$ ifconfig -a 
+     eth0   inet 192.168.0.88      netmask 255.255.255.0    
+$ tcpdump -i eth0 "udp port 33333" 
+      'translated: listen on interface eth0 for UDP packets on port 33333'
+
+##### Scan for listening daemons to determine whether a connection attempt will successful. 
+$ netcat -v -z -u  <public IP address> 33333 
+       'translated: check connectivity to a port on a remote server'
+**note** if you have a firewall enabled, ensure it allows 33333 through from the router. 
+
+### Setup WG VPN Server - install software/dependencies, fill configuration file, test & troubleshoot connection. 
+$ sudo apt install wireguard wireguard-tools iptables 
+       **sudo** superuser do - allows user to execute a command as an elevated user 
+       **apt** managing software and handling packages on the system efficiently. 
+
+- **iptables** this is used to manage NAT (network address translation) and packet forwarding in the kernel.
+
+$ sudo nano /etc/sysctl.conf 
+     'direction: uncommment by removing # next to **net.ipv4.ip_forward=1**, to enable packet forwarding for IPv4'
+$ cat /proc/sys/net/ipv4/ip_forward
+      'output must be 1' 
 
 
 
