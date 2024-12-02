@@ -44,7 +44,7 @@ Online privacy and security offers many benefits, VPNs (Virtual Private Networks
 
 Wireguard can run inside the Linux kernel, a part of the OS that does the low level processing, which is what is going to be demonstrated in this documentation. Wrieguard does not have a way of allocating dynamic IP addresses. This means your VPN IP address can be the same everytime you connect, which can lead to being tracked online. This and WG doesnt delete your IP when you disconnect, it remains in memory for another period of time. WG uses the same keys by default, if someone obtained the keys from the server they can decrypt traffic. WG doesnt do anything to obfuscate traffic, so it can be vulnerable to Deep Packet Inspection (DPI), so someone can figure you're using a VPN and even what type. WG is also UDP only, there are ways to enable TCP but we will address this in another post by utilizing 2 VPN tunnels for our traffic. 
 
-Also, its worthwhile to note that the traffic will have the same public IP address of where your server resides. So of it is running at home, with the VPN service running it will have the same home IP address even if you were to connect at a distant LAN. WG continues to be the most secure free and open source VPN protocol. 
+Also, its worthwhile to note that the traffic will have the same public IP address of where your server resides. So of it is running at home, with the VPN service running it will have the same home IP address even if you were to connect at a distant LAN. WG continues to be the most secure free and open source VPN protocol.
 
 ![Wireguard](:wg_7.png){:data-align="center"}
 
@@ -144,7 +144,7 @@ $ systemctl reload wg-quick@wg0
 **Outcomes:**
 - **Secure Remote Access** securely access your network from anywhere, ensuring data remains protected
 - **Internet Privacy** encryption helps protect your online privacy by preventing eavesdropping
-- **Faster VPN connections** lightweight & efficient VPN service, results in better speeds and lower latency  
+- **Faster VPN connections** lightweight & efficient VPN service, results in better speeds and lower latency
 
 ##### Generate QR Codes 
 $ apt install qrencode
@@ -158,6 +158,7 @@ $ tcpdump -i wg0
     
 $ wg show
 
+Your device will now connect to the VPN server using WireGuard, encrypting all traffic between your device and the VPN server. Next, you may want to assess outbound traffic from your sever, such as by implementing a SOCKS5 proxy. 
 
 
 
