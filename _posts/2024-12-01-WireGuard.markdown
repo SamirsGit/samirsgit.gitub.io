@@ -89,6 +89,7 @@ $ wg genkey | tee server-privatekey | wg pubkey > server-publickey
 - **suggestion** $ chmod 600 server-privatekey
 - this command will provide additional security to the private key ensuring its permissions are set accordingly
 
+
 ##### Create configuration file 
 $ sudo nano /etc/wireguard/wg0.conf 
 $ chmod 600 wg0.conf 
@@ -116,6 +117,7 @@ $ systemctl status wg-quick@wg0
 ![Wireguard](:wg_5.png){:data-align="center"}
 - **note** look for indicators that tell you whether the service is active or inactive. Ensure the service unit file is loaded correctly. Review log entries from the service.
 
+
 ### Setup Client connections: supported operating systems include Linux, Windows, MacOS, Android, iOS, and Raspberry Pi. 
 Download the Windows Wireguard application. Add an empty tunnel. Take note of the Public Key, it will need to be placed onto the WG VPN server as a peer. 
 
@@ -129,9 +131,14 @@ $ sudo nano /etc/wireguard/wg0.conf
 - PublicKey = <public_ip_of_client>
 - AllowedIPs =  10.0.0.2/32
 
-##### Reload the configuration file, activate the client tunnel. I suggest configuring this with a different DNS server than 8.8.8.8 or 8.8.4.4 
+##### Reload the configuration file, activate the client tunnel. 
+**note** I suggest configuring this with a different DNS server than 8.8.8.8 or 8.8.4.4, on the Rasperry Pi it hosts Pi-hole DNS server very well. 
 $ systemctl reload wg-quick@wg0
 
+**Outcomes:**
+- **Secure Remote Access** securely access your network from anywhere, ensuring data remains protected
+- **Internet Privacy** encryption helps protect your online privacy by preventing eavesdropping
+- **Faster VPN connections** lightweight & efficient VPN service, results in better speeds and lower latency  
 
 
 
