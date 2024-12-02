@@ -154,7 +154,7 @@ $ qrencode -t ansiutf8 -r "wg0.conf"
 ##### Test Connection 
 $ tcpdump -i wg0 
 ![Wireguard](:wg_8.png){:data-align="center"}
-- You should see a lot of traffic going over the connection, if nothing then there's no connection established.
+- You should see a lot of traffic going over the connection, if nothing, then there's no connection established.
     
 $ wg show
 
