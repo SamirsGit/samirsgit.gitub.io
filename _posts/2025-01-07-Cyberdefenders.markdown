@@ -58,11 +58,27 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q3** What is the protocol that attacker tried to bruteforce?
 
+![Splunk](:003_splunk5.png){:data-align="center"}
+
+![Splunk](:003_splunk12.png){:data-align="center"}
+
 **Q4** How many users did the attacker succeed in getting their accounts?
+
+![Splunk](:003_splunk6.png){:data-align="center"}
+
+![Splunk](:003_splunk8.png){:data-align="center"}
 
 **Q5** According to Microsoft, what is the description of the 'Sub Status' code for event ID 4625?
 
+![Splunk](:003_splunk7.png){:data-align="center"
+
+![Splunk](:003_splunk9.png){:data-align="center"
+
+![Splunk](:003_splunk19.png){:data-align="center"
+
 **Q6** How long did the bruteforce last?
+
+![Splunk](:003_splunk11.png){:data-align="center"
 
 **Q7** How long did the attacker login to the machine again? 
 
