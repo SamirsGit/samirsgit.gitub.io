@@ -70,11 +70,9 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q5** According to Microsoft, what is the description of the 'Sub Status' code for event ID 4625?
 
-![Splunk](:003_splunk7.png){:data-align="center"
+![Splunk](:003_splunk7.png){:data-align="center"}
 
-![Splunk](:003_splunk9.png){:data-align="center"
-
-![Splunk](:003_splunk19.png){:data-align="center"
+![Splunk](:003_splunk9.png){:data-align="center"}
 
 **Q6** How long did the bruteforce last?
 
