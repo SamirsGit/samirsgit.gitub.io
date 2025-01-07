@@ -48,6 +48,10 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q1** Who was the last logged in user?
 
+- Account Name: **Administrator**.
+- In Splunk, data is stored in various indexes, which can be interpretted as separate databases so we're telling Splunk to look only in data stored within t1110-003.
+- The second part of the query filters events that match the following field. In this scenario, Event 4624 is the windows log event ID we're searching for to find successful logins. 
+     
 ![Splunk](:003_splunk2.png){:data-align="center"}
 
 ![Splunk](:003_splunk1.png){:data-align="center"}
