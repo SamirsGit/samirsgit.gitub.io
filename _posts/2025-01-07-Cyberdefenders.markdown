@@ -72,14 +72,15 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:003_splunk7.png){:data-align="center"}
 
-![Splunk](:003_splunk9.png){:data-align="center"}
+![Splunk](:003_splunk10.png){:data-align="center"}
 
 **Q6** How long did the bruteforce last?
 
-![Splunk](:003_splunk11.png){:data-align="center"
+![Splunk](:003_splunk11.png){:data-align="center"}
 
 **Q7** How long did the attacker login to the machine again? 
 
 **Q8** What is the name of the policy used to lock the account after a certain number of failed login attempts? 
 
+![Splunk](:003_splunk13.png){:data-align="center"}
 
