@@ -42,6 +42,8 @@ date: 2024-10-15 18:47:35 +0900
 
 **Botnet** is a network of compromised computers that communicate with a central C&C server with the HTTP protocol. Neris Botnets are known to distribute malicious .exe files for infections.  When reviewing HTTP content type it's important to look for 'application/octet-stream' which indicates the transfer of binary data. You may also see a text file, probably because this includes configurations or instructions for the malware. 
 
+____________________________________________________________________________________________________________________________________________________________________________________________
+
 **Q1** Unusual patterns of activity were observed in Suricata logs. One external IP initiated access and was fond downloading a suspicious executable file. What is the IP address from which this unauthorized access originated? 
 
 - **Eventtype** field groups similar events together based on specific search patterns. This will allow you to search for specific types of events with a low chance of altering the raw data, which is a risk when using complex search queries each time. In this lab, the eventtype suricata_eve_ids_attack seems to a good option.
