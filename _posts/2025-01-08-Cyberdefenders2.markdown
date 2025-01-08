@@ -64,5 +64,5 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q4** Identify the unique files downloaded to the compromised host. How many of these files could be potentially malicious? 
 
-Answer: all 5, why? .exe are typically executable programs, which are common payloads for malware distribution, especially when you see its in the /temp directory. The .txt as well, appear less suspicious and help botnets evade detection by automated systems. 
+Answer: all 5, why? .exe are typically executable programs, which are common payloads for malware distribution, especially when you see its in the /temp directory. The .txt as well, appears less suspicious and help botnets evade detection by automated systems. 
 
