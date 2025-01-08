@@ -44,12 +44,14 @@ date: 2024-10-15 18:47:35 +0900
 
 - **Cyberdefenders** is a training platform for security professionals to learn, validate, and advance their cyber defense capabilities through self-driven hands-on training to prepare for real world challenges, particularly in blue team operations. Cyberdefenders uses real world situations and regularly updates to reflect latest trends and techniques in cybersecurity. This ensures that the training remains relevant and aligned with ongoing developments within the industry. 
 
+![Splunk](:003_splunk14.png){:data-align="center"}
+
 - **Scenario: T1110-003 - Password Spraying**: attackers often try a small list of passwords across multiple accounts. Because they only test one or few passwords per account, they avoid lockouts typical of traditional brute force attempts on a single account. Password spraying often hits standard management services including: SSH (22), Telent (23), FTP (21), SMB (139,445), LDAP (389), Kerberos (88), RDP (3389), HTTP/HTTPS (80,443), MSSQL (1433), Oracle (1521), MySQL (3306), and VNC (5900). This lab is focused on Splunk, however, Event Viewer would be an alternative tool that can be used to investigate threats.  
 
 **Q1** Who was the last logged in user?
 
-- Account Name: **Administrator**.
-- In Splunk, data is stored in various indexes, which can be interpretted as separate databases so we're telling Splunk to look only in data stored within t1110-003.
+- New Logon: **Administrator**.
+- In Splunk, data is stored in various indexes. This can be interpretted as separate databases so we're telling Splunk to look only in data stored within "t1110-003".
 - The second part of the query filters events that match the following field. In this scenario, Event 4624 is the windows log event ID we're searching for to find successful logins. 
      
 ![Splunk](:003_splunk2.png){:data-align="center"}
@@ -58,15 +60,23 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q2** What is the logon type of the failed logons?
 
+- Type 2: Interactive Logon - directly at the machine. 
+- Type 3: Network Logon - over the network. 
+- Type 10: Remote Interactive Logon - remotely, using a protocol like RDP.
+
 ![Splunk](:003_splunk3.png){:data-align="center"}
 
 **Q3** What is the protocol that attacker tried to bruteforce?
+
+- **RDP** (remote desktop protocol: 3389) allows users to connect to another computer over a network connection.
 
 ![Splunk](:003_splunk5.png){:data-align="center"}
 
 ![Splunk](:003_splunk12.png){:data-align="center"}
 
 **Q4** How many users did the attacker succeed in getting their accounts?
+
+- We know it's RDP, given the previous question, so we should search for an event ID 1149 to show timestamps for successful authentications. 
 
 ![Splunk](:003_splunk6.png){:data-align="center"}
 
@@ -78,13 +88,21 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:003_splunk10.png){:data-align="center"}
 
+- 0xC000006A - bad password
+- 0xC0000234 - account lockout
+- Look out for patterns, repeated failed logon attempts indicates a potential brute force attack or a uniquely persistent user. 
+
 **Q6** How long did the bruteforce last?
 
 ![Splunk](:003_splunk11.png){:data-align="center"}
 
 **Q7** How long did the attacker login to the machine again? 
 
+- Strangely, you should not count the logon type 10 as the most recent and instead use he timestamp from the type 3
+
 **Q8** What is the name of the policy used to lock the account after a certain number of failed login attempts? 
+
+- Group Policy: Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies >  Account Lockout Policy to edit lockout duration. 
 
 ![Splunk](:003_splunk13.png){:data-align="center"}
 
