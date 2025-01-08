@@ -56,7 +56,7 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q2** What is the domain name of the attacker server? 
 
-**Domain**: nocomcom.com, found in previous values under HTTP hostname, also known as the Command & Control domain in this scenario. 
+- **Domain**: nocomcom.com, found in previous values under HTTP hostname, also known as the Command & Control domain in this scenario. 
 
 **Q3** What is the IP address of the targeted system in this breach?
 
