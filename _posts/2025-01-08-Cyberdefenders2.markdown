@@ -40,7 +40,7 @@ date: 2024-10-15 18:47:35 +0900
 ---
 ### Neris Botnet 
 
-**Botnet** is a network of compromised computers that communicate with a central C&C server with the HTTP protocol.  
+**Botnet** is a network of compromised computers that communicate with a central C&C server with the HTTP protocol. Neris Botnets are known to distribute malicious .exe files for infections.  When reviewing HTTP content type it's important to look for 'application/octet-stream' which indicates the transfer of binary data. You may also see a text file, probably because this includes configurations or instructions for the malware. 
 
 **Q1** Unusual patterns of activity were observed in Suricata logs. One external IP initiated access and was fond downloading a suspicious executable file. What is the IP address from which this unauthorized access originated? 
 
@@ -52,5 +52,17 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:004_splunk2.png){:data-align="center"}
 
+- **Src_ip** = 195.88.191.59
 
+**Q2** What is the domain name of the attacker server? 
+
+**Domain**: nocomcom.com, found in previous values under HTTP hostname, also known as the Command & Control domain in this scenario. 
+
+**Q3** What is the IP address of the targeted system in this breach?
+
+![Splunk](:004_splunk3.png){:data-align="center"}
+
+**Q4** Identify the unique files downloaded to the compromised host. How many of these files could be potentially malicious? 
+
+Answer: all 5, why? .exe are typically executable programs, which are common payloads for malware distribution, especially when you see its in the /temp directory. The .txt as well, appear less suspicious and help botnets evade detection by automated systems. 
 
