@@ -48,3 +48,9 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:005_splunk1.png){:data-align="center"}
 
+**Q2** Pinpoint the source, what's the PID of the ransomware thats likely involved? 
+
+![Splunk](:005_splunk5.png){:data-align="center"}
+
+- **5348**
+- Why? 
