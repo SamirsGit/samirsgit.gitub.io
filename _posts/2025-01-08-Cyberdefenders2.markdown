@@ -74,7 +74,7 @@ Answer: all 5, why? .exe are typically executable programs, which are common pay
 
 ![Splunk](:004_splunk4.png){:data-align="center"}
 
-- **Virus Total** 
+- **Virus Total** is a tool used for threat detection and investigation. You can upload suspicious files to Virus Total to check for malware, this checks multiple antivirus systems to see if there are any reports on the samples behavior and potential issues. This includes URL and domain scanning, IP address reputation lookup, and is capable of being integrated into other tools using an API to streamline the investigation process and improve the overall security posture.
 
 ![Splunk](:004_splunk5.png){:data-align="center"}
 
