@@ -46,3 +46,5 @@ date: 2024-10-15 18:47:35 +0900
 
 **Q1** Identify the filename of the note that the ransomware left behind? 
 
+![Splunk](:005_splunk1.png){:data-align="center"}
+
