@@ -70,3 +70,12 @@ ________________________________________________________________________________
 
 Answer: all 5, why? .exe are typically executable programs, which are common payloads for malware distribution, especially when you see its in the /temp directory. The .txt as well, appears less suspicious and help botnets evade detection by automated systems. 
 
+**Q5** What is the SHA256 hash of the malicious file disguised as a .txt file? 
+
+![Splunk](:004_splunk4.png){:data-align="center"}
+
+- **Virus Total** 
+
+![Splunk](:004_splunk5.png){:data-align="center"}
+
+SHA256 hash: 6fbc4d506f4d4e0a64ca09fd826408d3103c1a258c370553583a07a4cb9a6530
