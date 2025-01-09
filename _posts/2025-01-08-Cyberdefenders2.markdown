@@ -60,7 +60,17 @@ ________________________________________________________________________________
 
 - **Domain**: nocomcom.com, found in previous values under HTTP hostname, also known as the Command & Control domain in this scenario.
 
-**Note:** 
+**Note:** this domain is identified as the source from which the malware is downloaded, markingg the beginning of the initial attack. The victim hosts would essentially be communicating back and forth with this server. 
+
+- GET or retrieve data from a server.
+- POST or submit data to a server to create or update a resource.
+- PUT or update a resource with the request payload.
+- DELETE or rmeove a specific resource from the server.
+- HEAD can be used to retrieve metadata.
+- OPTIONS describes the communication options for the resource.
+- PATCH can apply modifications to a resource.
+- CONNECT can establish a tunnel to a server.
+- TRACE can be used for diagnostic purposes such as testing the path to a resource. 
 
 **Q3** What is the IP address of the targeted system in this breach?
 
