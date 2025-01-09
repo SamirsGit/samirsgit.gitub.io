@@ -58,7 +58,9 @@ ________________________________________________________________________________
 
 **Q2** What is the domain name of the attacker server? 
 
-- **Domain**: nocomcom.com, found in previous values under HTTP hostname, also known as the Command & Control domain in this scenario. 
+- **Domain**: nocomcom.com, found in previous values under HTTP hostname, also known as the Command & Control domain in this scenario.
+
+**Note:** 
 
 **Q3** What is the IP address of the targeted system in this breach?
 
