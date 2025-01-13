@@ -60,7 +60,7 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:006_soc7.png){:data-align="center"}
 
-- We have a fully functional VM and were able to verify the proper services were running.
+- We have a fully functional VM and were able to verify the proper services are running.
 
 ![Splunk](:006_soc6.png){:data-align="center"}
 
@@ -73,5 +73,5 @@ date: 2024-10-15 18:47:35 +0900
 -  Cortex is automated analysis and response > Observables (IPs, Hashes), analysis results >> automate analysis of security observables 
 -  TheHive incident response and case management > Incidents, Alerts, Case Details, Evidence >> team collaboration and response coordination
 
-  
+![Splunk](:006_soc8.png){:data-align="center"}
 
