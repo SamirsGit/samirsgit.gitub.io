@@ -58,11 +58,9 @@ date: 2024-10-15 18:47:35 +0900
 
 - Download Sysmon > Save sysmonconfig.xml > run PowerShell as admin > verify Sysmon64 is running 
 
-![Splunk](:006_soc5.png){:data-align="center"}
-
 ![Splunk](:006_soc7.png){:data-align="center"}
 
-- Finally, we have a fully functional VM... for now. 
+- We have a fully functional VM and were able to verify the proper services were running.
 
 ![Splunk](:006_soc6.png){:data-align="center"}
 
