@@ -73,5 +73,15 @@ date: 2024-10-15 18:47:35 +0900
 -  Cortex is automated analysis and response > Observables (IPs, Hashes), analysis results >> automate analysis of security observables 
 -  TheHive incident response and case management > Incidents, Alerts, Case Details, Evidence >> team collaboration and response coordination
 
+![Splunk](:006_soc9.png){:data-align="center"}
+
+**Digital Ocean** this platform is for deploying, managing, and scaling applications. It has an interface that can be used in tandem with a variety of tools to manage the cloud infrastructure efficiently. For the next project I will use Proxmox and will set it up as a red team against this blue team environment. 
+- Location: can be your preferred data center location
+- Operating systems: Ubuntu 22.04 LTS >> LTS means Long-Term Support, leads to a more stable environment
+- Resources - each droplet must be 8 GB of memory for Wazuh & TheHive
+- Authentication - I chose pasword, but you can select SSH key if you'd like.
+- **Droplet** - scalable VM that runs on top of virtualized hardware. Each droplet is like an independent server used to host websites, databases, and host applications. 
+
 ![Splunk](:006_soc8.png){:data-align="center"}
 
+- SSH into the server using the public IP address. 
