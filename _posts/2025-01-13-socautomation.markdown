@@ -90,4 +90,7 @@ date: 2024-10-15 18:47:35 +0900
 
 - SSH into the server using the public IP address.
 
-![Splunk](:006_soc8.png){:data-align="center"}
+- **Firewall** these devices monitor and control incoming and outgoing network traffic based on predetermiend security rules. It acts as a barrier between your trusted internal network and untrusted external networks, such as the internet. If your building has a security guard, when someone unathorized walks into the building, the guard stops them from further proceeding. A firewall will examine data packets and decide whether to allow them through based on security rules. Functions include: packet filtering, stateful inspection, and proxy services.
+
+![Splunk](:006_soc10.png){:data-align="center"}
+
