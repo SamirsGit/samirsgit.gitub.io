@@ -44,6 +44,8 @@ date: 2024-10-15 18:47:35 +0900
 - **Common Roles: **SOC Manager, SOC Analyst, SOC Engineers, Incident Responders, Threat Hunters, Forensic Analysts, Vulnerability Analysts, Data Analysts, Threat Intel Analysts, Compliance Specialists,  
 - **Typical components**: SIEM, IDS/IPS, XDR, Firewalls, SOAR, Vulnerability Scanners, Network Monitoring Tools, Log Management, Ticketing, DLP, Active Directory
 
-- In this lab, we will be using _Wazuh_ as the SIEM and XDR, _Shuffle_ as the SOAR, _Virtual Total_ as an enrichment source for IoCs, and _TheHive_ as a case management platform.
+- In this lab, we will be using _Wazuh_ as the SIEM and XDR, _Shuffle_ as the SOAR, _Virtual Total_ as an enrichment source for IoCs, and _TheHive_ as a case management platform. Telemetry will be generated from the Wazuh Agent, for this example we will use mimikatz.exe, but there will be a future lab focused on red teaming this blue team environment to see how we can further improve the security stance. 
 
-![Splunk](:006_soc2.png){:data-align="center"}
+![Splunk](:006_soc3.png){:data-align="center"}
+
+
