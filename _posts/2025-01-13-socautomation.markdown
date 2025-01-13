@@ -48,4 +48,17 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:006_soc3.png){:data-align="center"}
 
+**Telemetry** - sensors collect data from equipment, this data is transmitted via a path to designated receiving equipment, which then processes and analyzes the data then present it.
+
+**Wazuh Agent** - ensure that you check to see which operating systems Wazuh agents support. In this example, I want to use Windows and Wazuh supports all ediitions of Windows 10. Proceeding, you will need to find an .iso file. Also, I will be hosting this iso image in VMWare Workstation Pro 17. I enjoy using all kinds of hypervisors, I noticed this one has 33% market share so I thought it would be worthwhile to use.  
+
+- **Sysmon** (System Monitor) this Windows system service and device driver will monitor and log system activity to help identify what's going on within the network. This is a part of Sysinternals, which is owned by Microsoft. The details included will be process creations, network connections, file creation and deletion, file creation time changes, driver and DLL loading, raw disk access, registry events, image load, pipe evens, WMI events. Storage: 128 GB, RAM: 4 GB, Processors: 1. 
+
+![Splunk](:006_soc4.png){:data-align="center"}
+
+
+
+
+
+
 
