@@ -40,4 +40,9 @@ date: 2024-10-15 18:47:35 +0900
 ---
 ### Security Operation Center: Automation Homelab Configuration
 
-- **Objective:**  
+- **Objective:** Security Operation Centers (SOC) are commonly centralized units that monitor, prevent, detect, investigate, and repsond to cyber threats on a 24/7 basis.
+- **Common Roles: **SOC Manager, SOC Analyst, SOC Engineers, Incident Responders, Threat Hunters, Forensic Analysts, Vulnerability Analysts, Data Analysts, Threat Intel Analysts, Compliance Specialists,  
+- **Typical components**: SIEM, IDS/IPS, XDR, Firewalls, SOAR, Vulnerability Scanners, Network Monitoring Tools, Log Management, Ticketing, DLP, Active Directory
+
+- In this lab, we will be using _Wazuh_ as the SIEM and XDR, _Shuffle_ as the SOAR, _Virtual Total_ as an enrichment source for IoCs, and _TheHive_ as a case management platform.
+
