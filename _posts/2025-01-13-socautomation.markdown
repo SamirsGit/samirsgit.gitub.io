@@ -46,3 +46,4 @@ date: 2024-10-15 18:47:35 +0900
 
 - In this lab, we will be using _Wazuh_ as the SIEM and XDR, _Shuffle_ as the SOAR, _Virtual Total_ as an enrichment source for IoCs, and _TheHive_ as a case management platform.
 
+![Splunk](:006_soc2.png){:data-align="center"}
