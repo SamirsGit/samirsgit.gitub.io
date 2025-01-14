@@ -112,9 +112,11 @@ date: 2024-10-15 18:47:35 +0900
 - **seeds** - change it to TheHive public IP
 - **cluster_name** - name of cluster
 
-![Splunk](:006_soc12.png){:data-align="center"}   << YAML photo (teams)
+![Splunk](:006_soc12.png){:data-align="center"}   
 
-![Splunk](:006_soc13.png){:data-align="center"}   << status of cassandra.service 
+![Splunk](:006_soc13.png){:data-align="center"}   
+
+Ensure that the status is active (running)
 
 
 
