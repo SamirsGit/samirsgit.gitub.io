@@ -164,8 +164,15 @@ I was looking to connect to TheHive but kept getting an error: ERR_CONNECTION_RE
 
 ![Splunk](:006_soc22.png){:data-align="center"}
 
-Configuration error: http was used instead of https and it began working again. Had to restart all services, the logs were pointing at Cassandra, JanusGraph could not connect to Cassandra on port 9042, it seems like TheHive's storage layer was unable to reach Cassandra, when TheHive cannot establish its backend storage connection, it will exit with a failure code as relayed. 
+Had to restart all services, the logs were pointing at Cassandra, JanusGraph could not connect to Cassandra on port 9042, it seems like TheHive's storage layer was unable to reach Cassandra. When TheHive cannot establish its backend storage connection, it will exit with a failure code as relayed. 
 
 ![Splunk](:006_soc23.png){:data-align="center"}
+
+TheHive web page should now load and you can try the default credentials:  username is admin@thehive.local, password is secret
+- I encountered an Authenticaton_Error, services are running. 
+
+![Splunk](:006_soc24.png){:data-align="center"} 
+
+
 
 
