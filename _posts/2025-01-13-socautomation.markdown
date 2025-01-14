@@ -144,6 +144,8 @@ Also we will need to edit the config file: nano /etc/thehive/application.conf
 
 ![Splunk](:006_soc17.png){:data-align="center"}
 
+## Common errors
+
 When we went to verify that all services (elasticsearch, thehive, and cassandra) are running, it was noticed that elasticsearch failed. 
 
 ![Splunk](:006_soc18.png){:data-align="center"} 
@@ -153,6 +155,10 @@ When we went to verify that all services (elasticsearch, thehive, and cassandra)
 ![Splunk](:006_soc19.png){:data-align="center"} 
 
 According to the error, Elasticsearch's main Java proces (pid=54844) was killed by OOM (out of memory) killer, the device is trying to free up some RAM. Elasticsearch was singled out because its relatively larger. 
+
+![Splunk](:006_soc20.png){:data-align="center"}
+
+I was looking to connect to TheHive but kept getting an error: ERR_CONNECTION_REFUSED, this tells me to check the service and see if its running.
 
 
 
