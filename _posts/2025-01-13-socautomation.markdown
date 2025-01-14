@@ -96,7 +96,7 @@ date: 2024-10-15 18:47:35 +0900
 
 - In Digital Ocean, perform the same steps for creating TheHive droplet. Ensure the firewall has your ISP issued public IP address in the firewall settings to allow connections to be established.
 
-- Create a text file. CD into the /etc directory, which contains system configuration files and shell scripts used to boot and initialize the system. Using the Nano text editor, command: nano runthis.sh. Ctrl + O will save the file. Ctrl + x will exit nano. Then make the file executable by typing chmod +x runthis.sh, similar to the labs covered in Over The Wire: Bandit. 
+- **Fast way to install all neccesary** Create a text file > navigate to the /etc directory > use nano to create and edit a file > ctrl + o to save + x to exit and use chmod +x to make an executable > ./script.sh will run it 
 
 ![Splunk](:006_soc11.png){:data-align="center"} 
 
