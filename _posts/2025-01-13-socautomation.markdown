@@ -135,7 +135,7 @@ Ensure that the status is active (running)
 
 Also we will need to edit the config file: nano /etc/thehive/application.conf
 
-![Splunk](:006_soc16.png){:data-align="center"}   << photo of the config 
+![Splunk](:006_soc16.png){:data-align="center"}  
 
 - **db.janusgraph_hostname** - change to TheHive public IP 
 - **db.janusgraph_cluster-name** - change to cluster named on Cassandras config file 
@@ -146,11 +146,11 @@ Also we will need to edit the config file: nano /etc/thehive/application.conf
 
 When we went to verify that all services (elasticsearch, thehive, and cassandra) are running, it was noticed that elasticsearch failed. 
 
-![Splunk](:006_soc18.png){:data-align="center"} << show initial failed
+![Splunk](:006_soc18.png){:data-align="center"} 
 
 **journalctl -xe** this command will view detailed system logs managed by systemd. Jorunalctl will query and display mesages. -x will provide context for log messages to explain in more detail. -e jumps to the end of the journal to show the most recent log entries first. 
 
-![Splunk](:006_soc19.png){:data-align="center"} << show journal ctl 
+![Splunk](:006_soc19.png){:data-align="center"} 
 
 According to the error, Elasticsearch's main Java proces (pid=54844) was killed by OOM (out of memory) killer, the device is trying to free up some RAM. Elasticsearch was singled out because its relatively larger. 
 
