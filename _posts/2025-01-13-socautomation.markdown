@@ -94,3 +94,14 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:006_soc10.png){:data-align="center"}
 
+- In Digital Ocean, perform the same steps for creating TheHive droplet. Ensure the firewall has your ISP issued public IP address in the firewall settings to allow connections to be established.
+
+![Splunk](:006_soc10.png){:data-align="center"} 
+
+- Create a text file. CD into the /etc directory, which contains system configuration files and shell scripts used to boot and initialize the system. Using the Nano text editor, command: nano runthis.sh. Ctrl + O will save the file. Ctrl + x will exit nano. Then make the file executable by typing chmod +x runthis.sh, similar to the labs covered in Over The Wire: Bandit. 
+
+![Splunk](:006_soc11.png){:data-align="center"} 
+
+-  If you come across the 'Daemons using outdated librares', press enter on dbus.service 
+
+
