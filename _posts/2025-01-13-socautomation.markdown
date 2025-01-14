@@ -114,9 +114,36 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:006_soc12.png){:data-align="center"}   
 
-![Splunk](:006_soc13.png){:data-align="center"}   
+![Splunk](:006_soc13.png){:data-align="center"} 
 
 Ensure that the status is active (running)
+
+**Elasticsearch** - search engine: used for indexing and searching large volumes of data in databases such as alerts, cases, and observables. configuration file: nano /etc/elasticsearch/elasticsearch.yml 
+- Both .yml and .yaml are the same in terms of functionality, some projects may prefer one over the other, but .yaml is more commonly used 
+
+- **cluster name** - good idea to give this a different name than the others to avoid confusion
+- **node name** - uncomment
+- **network host** - uncomment and change it to TheHive's public IP 
+- **http port** - uncomment it 
+- **cluster.initial_master_nodes** - uncomment and remove the second node
+
+![Splunk](:006_soc14.png){:data-align="center"} 
+
+![Splunk](:006_soc15.png){:data-align="center"} 
+
+**TheHive** configuration: we must change directory ownership to ensure users and groups have proper access to the /opt/thp file path. **chown** command is used to change ownership of files and directories. -R will apply the ownership change to the specific directory. Ensure you're in the right directory before typing in the following command. 
+
+Also we will need to edit the config file: nano /etc/thehive/application.conf
+
+![Splunk](:006_soc16.png){:data-align="center"}   << photo of the config 
+
+- **db.janusgraph_hostname** - change to TheHive public IP 
+- **db.janusgraph_cluster-name** - change to cluster named on Cassandras config file 
+- **index.search_hostname** - change to TheHive public IP 
+- **application.baseUrl** - change to "https://TheHive_IP:9000"
+
+![Splunk](:006_soc17.png){:data-align="center"}
+
 
 
 
