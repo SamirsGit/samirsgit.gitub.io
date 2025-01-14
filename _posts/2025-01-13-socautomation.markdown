@@ -158,10 +158,14 @@ According to the error, Elasticsearch's main Java proces (pid=54844) was killed 
 
 ![Splunk](:006_soc20.png){:data-align="center"}
 
-I was looking to connect to TheHive but kept getting an error: ERR_CONNECTION_REFUSED, this tells me to check the service and see if its running.
+I was looking to connect to TheHive but kept getting an error: ERR_CONNECTION_REFUSED, this tells me to check the service and see if its running, the port is not open. Journalctl was not as helpful to figure out the underlying reason for TheHive startup issues, the command will only show systemd's view. we should check the **/var** directory for logs that contain lines marked Error, Exception, or Caused by. 
 
+![Splunk](:006_soc21.png){:data-align="center"}
 
+![Splunk](:006_soc22.png){:data-align="center"}
 
+Configuration error: http was used instead of https and it began working again. Had to restart all services, the logs were pointing at Cassandra, JanusGraph could not connect to Cassandra on port 9042, it seems like TheHive's storage layer was unable to reach Cassandra, when TheHive cannot establish its backend storage connection, it will exit with a failure code as relayed. 
 
+![Splunk](:006_soc23.png){:data-align="center"}
 
 
