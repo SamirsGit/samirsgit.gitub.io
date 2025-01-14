@@ -100,6 +100,21 @@ date: 2024-10-15 18:47:35 +0900
 
 ![Splunk](:006_soc11.png){:data-align="center"} 
 
--  If you come across the 'Daemons using outdated librares', press enter on dbus.service 
+-  If you come across the 'Daemons using outdated librares', press enter on dbus.service
+
+- **Dependencies** this term refers to extenral components, libraries, modules that a software application requires to function correctly. Example: If you're making a website, you might need a library to help with animations. If you're building a game you might need a sound library to add music and sound effects.
+- TheHive: Java, Apache Cassandra (database), Elasticsearch (indexing and searching data), and other utilities (git, curl, wget, pip)...
+
+**Cassandra** _this is the primary database_. It's often used to store alert data, incident data, log data, threat intel, user activity data, configuration data, and vulnerability data. nano /etc/cassandra/cassandra.yaml
+
+- **listen_address** - change it to TheHive public IP
+- **rpc_address** - change it to TheHive public IP
+- **seeds** - change it to TheHive public IP
+- **cluster_name** - name of cluster
+
+![Splunk](:006_soc12.png){:data-align="center"}   << YAML photo (teams)
+
+![Splunk](:006_soc13.png){:data-align="center"}   << status of cassandra.service 
+
 
 
