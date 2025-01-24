@@ -174,7 +174,14 @@ TheHive web page should now load and you can try the default credentials:  usern
 
 ## Wauh Agent Configuration
 
+- **VMware Tools** add functionalities such as time synchronization, automated script execution, secure communication between other devices, driver installation, and performance optimization. To download, VM > VMware tools on top left of VMware. File Explorer > D: > run setup64.exe, this will be to install VMware tools.
+
+- To generate the code for your agent, you must click add agent in the Wazuh manager dashboard and the code will present iteself. Ensure you double check the dashboard once this service is ran, it should show 1 agent is present. 
+
 ![Splunk](:006_soc25.png){:data-align="center"}
+
+
+
 
 
 
