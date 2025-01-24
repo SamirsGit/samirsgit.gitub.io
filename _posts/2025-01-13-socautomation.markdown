@@ -38,7 +38,7 @@ date: 2024-10-15 18:47:35 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-### Security Operation Center: Automation Homelab Configuration
+### Security Automation Homelab: Wazuh, TheHive, and Shuffle Integration
 
 - **Objective:** Security Operation Centers (SOC) are commonly centralized units that monitor, prevent, detect, investigate, and repsond to cyber threats on a 24/7 basis.
 - **Common Roles: **SOC Manager, SOC Analyst, SOC Engineers, Incident Responders, Threat Hunters, Forensic Analysts, Vulnerability Analysts, Data Analysts, Threat Intel Analysts, Compliance Specialists,  
