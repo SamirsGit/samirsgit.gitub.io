@@ -11,7 +11,7 @@ category: auto generated
 # multiple tag entries are possible
 tags: [jekyll, test]
 # thumbnail image for post
-img: ":cyberlab1.jpg"
+img: ":socauto.jpg"
 # disable comments on this page
 comments_disable: true
 
