@@ -39,8 +39,8 @@ img: ":samir.png"
 
 - **Track Progress Over Time** 📈: I aim to learn more skills and combine them in creative ways. 
 
-- **Showcase Completed Work** 🛠️: connect with me on LinkedIn if you have any questions or requests for future articles. 
+- **Showcase Completed Work** 🛠️: Connect with me on LinkedIn if you have any questions. 
 
-- **Share Knowledge with the Tech Community** 🌐: By documenting my experiences, I hope to contribute valuable insights and help others on similar paths.
+- **Share Knowledge with the Tech Community** 🌐: I hope to contribute valuable insights and help others on similar paths.
 
 
