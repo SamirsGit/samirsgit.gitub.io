@@ -180,6 +180,8 @@ TheHive web page should now load and you can try the default credentials:  usern
 
 ![Splunk](:006_soc25.png){:data-align="center"}
 
+![Splunk](:006_soc26.png){:data-align="center"}
+
 
 
 
