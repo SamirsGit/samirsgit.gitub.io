@@ -172,6 +172,9 @@ TheHive web page should now load and you can try the default credentials:  usern
 
 ![Splunk](:006_soc24.png){:data-align="center"}
 
+## Wauh Agent Configuration
+
+![Splunk](:006_soc25.png){:data-align="center"}
 
 
 
