@@ -223,6 +223,29 @@ Wazuh will save all logs in the /var/ossec/logs/archives folder.
   
 ![Splunk](:006_soc33.png){:data-align="center"}
 
+**Indexing logs** refers to the process of organizing log data for quicker searches by reducing the amount of data that needs to be scanned during a query. By being more specific with log indexing, it will utilize less resources and it will be easier to nalyze patterns and identify issues. Look out for duplicate log entries, it may show the presense of an existing issue that uses more storage space. 
+
+![Splunk](:006_soc34.png){:data-align="center"}
+
+**rerun Mimikatz on the agent**, open Event Viewer > Event ID 1 = Process Create 
+
+![Splunk](:006_soc35.png){:data-align="center"}
+
+Check Wazuh Manager, there should be hits which shows it caught this event. 
+
+![Splunk](:006_soc36.png){:data-align="center"}
+
+## Create an Alert for Mimikatz 
+
+What if the attacker changes the name of this file to something other than Mimikatz? We can create a custom rule to trigger an alert when this happens. 
+
+![Splunk](:006_soc37.png){:data-align="center"}
+
+**Rule creation**:   Management > Rules > Manage rules files . Wazuh ruleset is a collection of predefined conditions and patterns written in XML forat that the Wazuh manager uses to analyze incoming traffic. This will impact how logs are interpreted and define the criteria for generating alerts when specific events or behaviors are detected. Rules are XML elements, decoders parse and normalize raw log data into a structured format that Wazuh can process. Rule groups allow for organized management and categorization based on their function or type of event being monitored. 
+
+![Splunk](:006_soc38.png){:data-align="center"}
+
+
 
 
 
