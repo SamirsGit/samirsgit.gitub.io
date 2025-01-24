@@ -39,7 +39,7 @@ img: ":purple1.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
+# Welcome to My Tech Blog
 
-{{ website_info_text_second }}
+Stay tuned for the latest updates and articles on technology and innovation.
+
