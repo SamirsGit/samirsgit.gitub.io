@@ -2,13 +2,13 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "Tech Notes & Stuff"
+brand: "Secure Your Gear!"
 
 # text below the brand name
 brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
-name: "Your Name"
+name: "Samir Anastasio"
 
 # home page top header texts
 home:
@@ -50,7 +50,7 @@ meta_common_description: "Your meta description."
 contacts:
   #- github: ""
   #- email: ""
-  #- linkedin: ""
+  - linkedin: "https://www.linkedin.com/in/samiranastasio/"
   #- twitter: ""
   #- mastodon: ""
   #- instagram: ""
