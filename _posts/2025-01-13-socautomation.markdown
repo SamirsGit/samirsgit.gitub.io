@@ -169,9 +169,8 @@ Had to restart all services, the logs were pointing at Cassandra, JanusGraph cou
 ![Splunk](:006_soc23.png){:data-align="center"}
 
 TheHive web page should now load and you can try the default credentials:  username is admin@thehive.local, password is secret
-- I encountered an Authenticaton_Error, services are running. 
 
-![Splunk](:006_soc24.png){:data-align="center"} 
+![Splunk](:006_soc24.png){:data-align="center"}
 
 
 
