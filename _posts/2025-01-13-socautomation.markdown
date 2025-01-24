@@ -245,8 +245,16 @@ What if the attacker changes the name of this file to something other than Mimik
 
 ![Splunk](:006_soc38.png){:data-align="center"}
 
+- Custom rule IDs start at 100000, in this case, ours will be 100002.
+- The level ranges up to 15, with higher numbers indicating greater severity.
+- For the field name, we specify win.eventdata.originalFileName (which is case sensitive) and use mimikatz.exe as the value.
+- Additionally, we include the MITRE ATT&CK ID T1003, which refers to Creden. Make sure to click save, must restart manager when prompted
 
+![Splunk](:006_soc39.png){:data-align="center"}
 
+![Splunk](:006_soc40.png){:data-align="center"}
 
+**Note** we changed the application name from Mimikatz to notepad.exe, notice it was still detected.
 
+## Workflow creation using Shuffle
 
