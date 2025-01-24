@@ -40,12 +40,10 @@ img: ":samir.png"
 
 This site is my digital playground where I:
 
-- **Track Progress Over Time** 📈: From humble beginnings to current projects, witness the evolution!
+- **Track Progress Over Time** 📈: I aim to learn more skills and combine them in creative ways. 
 
-- **Showcase Completed Work** 🛠️: Dive into the nitty-gritty of my accomplishments and the steps taken to achieve them.
+- **Showcase Completed Work** 🛠️: 
 
-- **Share Knowledge with the Tech Community** 🌐: By documenting my experiences, I aim to contribute valuable insights and help others on similar paths.
-
-Join me as I navigate the ever-evolving tech landscape, embracing challenges and celebrating milestones along the way! 🎉 
+- **Share Knowledge with the Tech Community** 🌐: By documenting my experiences, I hope to contribute valuable insights and help others on similar paths.
 
 
