@@ -35,8 +35,7 @@ img: ":samir.png"
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-
-**Welcome to my personal tech journey!** 🚀
+**Always keep learning!** 🚀
 
 - **Track Progress Over Time** 📈: I aim to learn more skills and combine them in creative ways. 
 
