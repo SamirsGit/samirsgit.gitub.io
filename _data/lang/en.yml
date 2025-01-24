@@ -171,8 +171,8 @@ privacy-policy:
 
 # constants to be replaced for
 constants:
-  greetings: Hello
-  welcome: Welcome
+  greetings: 
+  welcome: 
   sample: Samir Anastasio
 
 # for contact form
