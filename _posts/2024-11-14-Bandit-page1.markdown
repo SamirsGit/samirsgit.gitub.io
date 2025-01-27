@@ -127,8 +127,10 @@ Level Password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 The password for the next level is stored somewhere on the server and has all of the following properties:
 owned by user bandit7, owned by group bandit6, 33 bytes in size
 
-**Commands**
-- **/** In Linux, when using the slash / key it means to search the entire server. The / is the root directory, similar tot he C: drive on Windows.
+**Command Explanations*
+- **/** slash / key it means to search the entire server. The / is the root directory, similar tot he C: drive on Windows.
+- **.** this represents the current directory
+- ** * ** this will match zero or more characters in filenames or directory names, such as all files with *.txt extension.  
 - **>** this is a redirection operator, it will be used to redirect the output of a command to another file or location rather than on the current screen.
 - **0** by placing a zero before the redirection operator, it will target standard input: this is useful when automating since you can feed commands with data from files. 
 - **1** by placing a zero before the redirection operator, it will target standard output: this is regular successful output displayed on the screen.  
