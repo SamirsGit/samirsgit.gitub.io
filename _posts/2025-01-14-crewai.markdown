@@ -44,7 +44,7 @@ date: 2024-10-16 18:47:35 +0900
 
 CrewAI is capable of simplifying reptitive tasks like monitoring, analysis, and reporting. Multiple agents specialize in distinct tasks, improving efficiency and effectiveness. Continuous feedback ensures your cybersecurity system evoles with emerging threats. CrewAI can integrate seamlessly with tools like SIEMs, vulnerability scanners, and patch management. It is important to consider the confidentiality, integrity, and availabiliy of all data that is being handled. While CrewAI may be seen as trustworthy, this does not guarantee it has not been compromised or that company data is not being sent elsewhere. Implementing security measures and regular audits is essential to maintain trustworthiness of any integrated system being utilized. Some tools support caching, which will enable an agent to retain results to reduce strain on external resources, this can be a security issue. 
 
-Components: (Agents, Tasks, Crew, Tools, Process)
+Components: (Agents, Tasks, Crew, Tools, Environment)
 
 - **Agents**: focus on one task or domain, this may include data collection, analysis, or reporting. Agents operate indepdendently but share data with the group as needed. These agents can communicate with other agents to coordinate workflows and make decisions collaboratively. You can add or remove agents based on the complexity of the project to ensure scalability. Agents have feedback mechanisms to improve performance and accuracy over time. An analysis agent will work on improving itself based on feedback from other agents or the system as a whole. This includes agents trained on prioritizing tasks and ensuring critical issues are addressed.  
   
