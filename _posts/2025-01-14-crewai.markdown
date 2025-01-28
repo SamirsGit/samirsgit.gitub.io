@@ -11,12 +11,12 @@ category: auto generated
 # multiple tag entries are possible
 tags: [jekyll, test]
 # thumbnail image for post
-img: ":otw_intro.jpg"
+img: ":007_crewai1.png"
 # disable comments on this page
 comments_disable: true
 
 # publish date
-date: 2024-10-14 18:47:35 +0900
+date: 2024-10-16 18:47:35 +0900
 
 # seo
 # if not specified, date will be used.
