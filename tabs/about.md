@@ -43,6 +43,6 @@ img: ":samir.png"
 
 - **Share Knowledge with the Tech Community** 🌐: By exchanging information about vulnerabilities, attack methodologies, and defense strategies, we can better anticipate and mitigate cyber risks.
 
-- In addition to my IT expertise, I have a background in finance and data analytics, this enables me to identify opportunities for improving operational efficiency and cost effectiveness. Behind my financial and technical knowledge, I am a continous learner who thrives in collaborative, fast-paced environments. I am always looking to expand my knowledge, whether through certifications, tech projects, or helping others in the tech community.  
+- In addition to my IT foundation, I have a background in finance and data analytics, this enables me to identify opportunities for improving operational efficiency and cost effectiveness. I am a continous learner who thrives in collaborative, fast-paced environments. 
 
 
