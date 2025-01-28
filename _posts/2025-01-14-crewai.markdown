@@ -52,17 +52,11 @@ Components: (Agents, Tasks, Crew, Tools, Process)
   
 - **Crew**: refers to the team of agents each designed with tasks. These agents will operate autonomously but communicate and work collaboratively to accomplish the objective through orchestration. Similar to how a SIEM, SOAR, and SIRP come together to form an integrated cybersecurity ecosystem, they collectively enhance a teams ability to detect, respond to, and manage threats in a streamlined and automated manner. 
   
-- **Tools**: is a function that can be used to perform various actions. CrewAI has a toolkit, which can enable a variety of tasks, all of which have been built with error handling capabilities. 
+- **Tools**: is a function that can be used to perform various actions. CrewAI has a toolkit, which can enable a variety of tasks, all of which have been built with error handling capabilities. Some tools can be used to find programs in Github that may not have the best description so it will be harder to find manually. You will find some tools are capable of doing web searches but can be slightly tweaked to perform other functions specific to an agents task.
 
-Environment:
+- **Environment**: refers to the fcomphrehensive setup that supports and enables the operation of the CrewAI and agents. It encompasses all the infrastructure, platforms, services, and tools that facilitate the execution management, and integration of automation tasks. Key elements of the environment includes the computing resources. Large Language Models LLMs are at the core of CrewAI, they enable them to understand context, make decisions, and generate responses. 
 
-Research:
 
-Analyze: 
-
-Summarize: 
-
-Report:
 
 
 
