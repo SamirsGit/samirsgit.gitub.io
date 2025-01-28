@@ -43,4 +43,6 @@ img: ":samir.png"
 
 - **Share Knowledge with the Tech Community** 🌐: By exchanging information about vulnerabilities, attack methodologies, and defense strategies, we can better anticipate and mitigate cyber risks.
 
+- In addition to my IT expertise, I have a background in finance and data analytics, this enables me to identify opportunities for improving operational efficiency and cost effectiveness.
+
 
