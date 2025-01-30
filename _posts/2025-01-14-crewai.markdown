@@ -57,7 +57,8 @@ Components: (Agents, Tasks, Crew, Tools, Environment)
 - **Environment**: refers to the fcomphrehensive setup that supports and enables the operation of the CrewAI and agents. It encompasses all the infrastructure, platforms, services, and tools that facilitate the execution management, and integration of automation tasks. Key elements of the environment includes the computing resources. Large Language Models LLMs are at the core of CrewAI, they enable them to understand context, make decisions, and generate responses.
 
 
-
+Code: note -- 
+_______ 
 
 
 
