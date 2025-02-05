@@ -258,4 +258,24 @@ What if the attacker changes the name of this file to something other than Mimik
 
 ## Workflow creation using Shuffle
 
+Shuffle is an open source interpretation of SOAR, it's user friendly interface made automation approachable for those interested to streamline security operations. We need to have Wazuh communicate with Shuffle to streamline alert handling, and with this use VirusTotal to provide us threat intelligence, and integrate with TheHive for case management. 
+
+**Create a workflow** which is a series of automated steps in a particular sequence to perform specific tasks. Workflows consists of apps that perform specific actions within the workflow, triggers that initiate the workflow and can be activated based on time, incoming data, or other conditions, and variables to store information and be reused throughout the workflow for various actions. 
+
+Trigger: an alert from SIEM system
+Enrichment: Use VirusTotal to enrich alert data with additional threat intelligence 
+Detection: check if the alert matches known patterns 
+Response: if a threat is detected, isolate the affected system and notify the security team 
+Verification: perform post-incident analysis to ensure the threat has been mitigated and systems are secure
+
+Additional steps:
+In order to connect Wazuh with Shuffle you need an integration tag in the ossec.conf file, can be found nano /var/ossec/etc/ossec.conf. In shuffle, integrate the Webhook URI, you will find the URL under parameters. 
+- make sure to restart the wazuh-manager after making this configuration change. Then, proceed with rerunning notepad.exe (mimikatz) on the Wazuh Agent host in vmware to create an alert.
+
+- In shuffle, click start on the Webhook. Select Show executions and there should be some events from Wazuh, let's confirm the alert is related to mimikatz 
+
+![Splunk](:006_soc41.png){:data-align="center"}
+
+
+
 
