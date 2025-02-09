@@ -37,7 +37,7 @@ img: ":samir.png"
 ---
 # Good design, when it's done well, becomes invisible. 
 
-Hello, I'm Samir Anastasio, a passionate and dedicated IT professional with experience in maintaining IT infratructure and implementing solutions across a wide range of areas, including network and system administration, cybersecurity, and cloud computing. 
+Hello, I'm Samir Anastasio, a passionate and dedicated IT professional with experience in maintaining IT infratructures and implementing solutions across a wide range of areas, including network and system administration, cybersecurity, and cloud computing. 
 
 There is no IT crystal ball. Even with thorough research and proven solutions, IT will continue to evolve. By staying informed and adaptable, we can ensure our infrastructure meets current needs and anticipates future challenges and opportunities. My approach is centered around collaboration, continuous learning, and a commitment to integrity in every task that I perform. I am driven by a passion for technology and a desire to make a meaningful impact in our IT community. 
 
