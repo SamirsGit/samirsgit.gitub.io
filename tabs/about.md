@@ -35,14 +35,7 @@ img: ":samir.png"
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-**Always keep learning!** 🚀
+# Good design, when it's done well, becomes invisible. 
 
-- **Track Progress Over Time** 📈: I aim to learn more skills and combine them in creative ways. 
-
-- **Showcase Completed Work** 🛠️: Connect with me on LinkedIn if you have any questions. 
-
-- **Share Knowledge with the Tech Community** 🌐: By exchanging information about vulnerabilities, attack methodologies, and defense strategies, we can better anticipate and mitigate cyber risks.
-
-- In addition to my IT foundation, I have a background in finance and data analytics, this enables me to identify opportunities for improving operational efficiency and cost effectiveness. I am a continous learner who thrives in collaborative, fast-paced environments. 
-
+There is no IT crystal ball. Even with thorough research and proven solutions, IT will continue to evolve. By staying informed and adaptable, we can ensure our infrastructure meets current needs and anticipates future challenges and opportunities.
 
