@@ -41,7 +41,6 @@ img: ":winos.jpg"
 
 # Technology is best when it brings people together.
 
-The purpose behind this website is to track progress and accumulate documentation overtime that can serve as a way to streamline project management, facilitate knowledge sharing, and support continuous improvement within any IT team that I have the opportunity to join. By centralizing IT and security related resources and insights, personal websites will not only enhance collaboration but also drive innocation and efficiency, ensuring that every project benefits from a well documented history of best practices and lessons learned.  
+The purpose behind this website is to track progress and accumulate documentation overtime that can serve as a way to streamline project management, facilitate knowledge sharing, and support continuous improvement within any IT team that I have the opportunity to join. By centralizing IT and security related resources and insights, personal websites will not only enhance collaboration but also drive innovation and efficiency, ensuring that every project benefits from a well documented history of best practices and lessons learned.  
 
-Please reach out with any suggestions!   
-
+The only downside to continuous technology improvements? In most cases, your older tech looks worse and worse as it ages.   :)
