@@ -41,6 +41,9 @@ img: ":winos.jpg"
 
 # Technology is best when it brings people together.
 
-The purpose behind this website is to track progress and accumulate documentation overtime that can serve as a way to streamline project management, facilitate knowledge sharing, and support continuous improvement within any IT team that I have the opportunity to join. By centralizing IT and security related resources and insights, personal websites will not only enhance collaboration but also drive innovation and efficiency, ensuring that every project benefits from a well documented history of best practices and lessons learned.  
+The purpose behind this website is to track progress and accumulate documentation over time, serving as a way to streamline project management, facilitate knowledge sharing, and support continuous improvement within any IT team I have the opportunity to join. By centralizing IT and security-related resources and insights, personal websites will not only enhance collaboration but also drive innovation and efficiency, ensuring that every project benefits from a well-documented history of best practices and lessons learned.
 
-The only downside to continuous technology improvements? In most cases, your older tech looks worse and worse as it ages.  
+The only downside to continuous technology improvements? Your older tech looks worse and worse as it ages. As new technology emerges with better features, higher performance, and improved aesthetics, older technology seems outdated and less appealing. This is often due to advancements in design, functionality, and user experience. Additionally, newer technology may not always be compatible with older systems, leading to difficulties in using older devices or software. This can make older technology less practical over time. Furthermore, older technology may struggle to keep up with the demands of modern applications and tasks. 
+
+Due to the rapid pace of technological advancements, professionals must constantly acquire new knowledge and skills to stay relevant and effective in their roles, emphasizing the importance of continous learning to keep up with emerging trends, tools, and best practices. This will help ensure the overall success of an IT team, keeping up is essential.  
+
