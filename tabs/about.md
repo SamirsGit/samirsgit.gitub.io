@@ -41,3 +41,5 @@ Hello, I'm Samir Anastasio, a passionate and dedicated IT professional with expe
 
 There is no IT crystal ball. Even with thorough research and proven solutions, IT will continue to evolve. By staying informed and adaptable, we can ensure our infrastructure meets current needs and anticipates future challenges and opportunities. My approach is centered around collaboration, continuous learning, and a commitment to integrity in every task that I perform. I am driven by a passion for technology and a desire to make a meaningful impact in our IT community. 
 
+To get this out of the way: If you have feedback or suggestions, please share them with me. I would love to hear your thoughts and the approach that works well for you. 
+
